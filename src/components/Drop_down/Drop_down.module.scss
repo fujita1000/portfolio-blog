@@ -7,7 +7,7 @@
 .dropdown {
   width: 1000px;
   margin: 0 auto;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,4 +29,21 @@
   background-repeat: no-repeat;
   background-size: 50px 50px;
   background-position: left 10px center;
+}
+.reletive{
+  position: relative;
+}
+.h2{
+  white-space: nowrap;
+  position: absolute;
+  top: -55px;
+  color: var(--white-text);
+  font-size: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  z-index: 10;
+  font-weight: 1000;
+  letter-spacing:5px;
 }

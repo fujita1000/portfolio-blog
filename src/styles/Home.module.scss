@@ -5,5 +5,13 @@
   --white-text: #f9f9f9;
   // background-color: var(--main-color);
   height: 2000px;
+  background-color: var(--sub-color);
 }
-
+.PostCard{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+}
