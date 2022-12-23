@@ -7,9 +7,10 @@ body {
   list-style-type: none;
   text-decoration: none;
   font-family: ＭＳ 明朝, 游明朝, Yu Mincho, YuMincho, Hiragino Mincho Pro, serif;
+}
+body{
   overflow-x: hidden;
 }
-
 a {
   color: #fff;
   text-decoration: none;
