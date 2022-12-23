@@ -7,7 +7,7 @@ class Document extends NextDocument<Props> {
   render() {
     return (
       <Html lang="ja">     
-      <title>コロナ感染者数観測アプリ</title>
+      <title>Valorant火薬庫</title>
       <Head>
       <link
         rel="apple-touch-icon"
@@ -35,8 +35,6 @@ class Document extends NextDocument<Props> {
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
-
-      <link rel="shortcut" href="../../public/favicon.ico" />
 
       <meta charSet="utf-8" />
 
