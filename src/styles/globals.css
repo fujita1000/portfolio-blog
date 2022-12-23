@@ -1,4 +1,7 @@
-html,
+input, select {
+  -webkit-appearance: none;
+  appearance: none;
+}html,
 body {
   height: 100vh;
   text-transform: none;
@@ -19,4 +22,3 @@ a {
 * {
   box-sizing: border-box;
 }
-

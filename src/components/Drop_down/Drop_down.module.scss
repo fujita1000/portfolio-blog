@@ -1,0 +1,32 @@
+// ドロップダウンリスト
+.dropdown_con {
+  width: 100vw;
+  background-color: var(--main-color);
+}
+
+.dropdown {
+  width: 1000px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown_item {
+  text-align: center;
+  width: 480px;
+  height: 70px;
+  background-color: var(--main-color);
+  border: solid 3px var(--white-text);
+  padding: 10px;
+  font-size: 20px;
+  color: var(--white-text);
+  position: relative;
+  font-size: 30px;
+ padding-left: 30px;
+  background-image: url(../../../public/down_logo.svg);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left 10px center;
+}

@@ -1,0 +1,34 @@
+.container {
+  --main-color: #ff4655;
+  --sub-color: #ece8e1;
+  --black-text: #111111;
+  --white-text: #f9f9f9;
+  // background-color: var(--main-color);
+  width: 100vw;
+  height: 75px;
+  background-color: var(--black-text);
+  padding: 2px;
+}
+.main{
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title{
+  color: var(--white-text);
+  font-size: 50px;
+
+}
+.nav_open{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+.open_bar{
+  width: 60px;
+  height: 3px;
+  background-color: var(--white-text);
+  margin-bottom: 20px;
+}
