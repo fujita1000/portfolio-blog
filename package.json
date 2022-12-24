@@ -12,12 +12,22 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
+    "mdast-util-toc": "^6.1.0",
     "next": "12.3.1",
+    "next-seo": "^5.15.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "rehype-parse": "^8.0.4",
+    "rehype-react": "^7.1.1",
+    "rehype-slug": "^5.1.0",
+    "rehype-stringify": "^9.0.3",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "remark-toc": "^8.0.1",
     "reset-css": "^5.0.1",
     "sass": "^1.55.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "unified": "^10.1.2"
   },
   "prettier": {
     "trailingComma": "all",

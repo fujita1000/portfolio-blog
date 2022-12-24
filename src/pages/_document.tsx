@@ -7,7 +7,6 @@ class Document extends NextDocument<Props> {
   render() {
     return (
       <Html lang="ja">     
-      <title>Valorant火薬庫</title>
       <Head>
       <link
         rel="apple-touch-icon"
@@ -37,10 +36,8 @@ class Document extends NextDocument<Props> {
       <meta name="theme-color" content="#ffffff" />
 
       <meta charSet="utf-8" />
-
-      <meta name="description" content="ポートフォリオ用のサイトです。各国のコロナ感染者を観測するサイトです。" />
       <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, width=device-width, initial-scale=1" />
-      <meta name="keywords" content="コロナ ポートフォリオ" />
+      <meta name="keywords" content="Valorant valorant 空爆" />
       <meta name="google" content="nositelinkssearchbox" />
 
         </Head>

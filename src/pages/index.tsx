@@ -6,7 +6,6 @@ import Link from 'next/link';
 import Drop_down from '../components/Drop_down/Drop_down';
 import PostCard from '../components/PostCard/postCard';
 import Top_bg from '../components/Top_bg/Top_bg';
-
 import styles from '../styles/Home.module.scss';
 import {posts, post} from "../utils/types"
 
