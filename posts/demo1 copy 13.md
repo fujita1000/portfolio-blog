@@ -1,9 +1,9 @@
 ---
-title: 'demo3'
-date: '2022-05-22'
+title: 'ヴァイパー'
+date: '2022-07-13'
 description: 'Next.jsでmarkdownファイルを利用したブログの構築手順を解説しています。'
 image: logo.png
-categories: ['react']
+categories: ['ヴァイパー'] 
 ---
 
 ## 目次

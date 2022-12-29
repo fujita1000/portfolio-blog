@@ -47,3 +47,27 @@
   font-weight: 1000;
   letter-spacing:5px;
 }
+.color{
+  color: white;
+}
+
+.agent{
+
+select#agent option[value="brim"] {
+  background-image: url("../../../public/logo.png");
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+}
+
+select#gender option[value="phoenix"] {
+  background-image: url("../../../public/logo.png");
+  z-index: 100;
+}
+
+select#gender option[value="sage"] {
+  background-image: url("../../../public/logo.png");
+  z-index: 100;
+}
+
+}

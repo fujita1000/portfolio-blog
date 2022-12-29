@@ -15,7 +15,7 @@ const Footer = () => {
         </Link>
         <Image src={'/twitter_logo.svg'} alt='twitterのロゴ' width={200} height={200}></Image>
       </div>
-      <p className={styles.copyright}>Copyright - Marumazi, 2022 All Rights Reserved.</p>
+      <p className={styles.copyright}>Copyright - Oomiya, 2022 All Rights Reserved.</p>
     </footer>
   );
 }

@@ -1,6 +1,6 @@
 ---
-title: 'ブリム'
-date: 'ブリム'
+title: 'ヴァイパー'
+date: '2022-07-13'
 description: 'Next.jsでmarkdownファイルを利用したブログの構築手順を解説しています。'
 image: logo.png
 categories: ['ヴァイパー'] 
