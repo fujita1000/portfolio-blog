@@ -1,9 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Head from 'next/head';
-import Image from 'next/image';
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import Drop_down from '../components/Drop_down/Drop_down';
 import Pagination from '../components/Pagination/Pagination';
 import PostCard from '../components/PostCard/postCard';
@@ -13,32 +10,30 @@ import { LIST_LIMIT } from '@/pages/api/pagination';
 
 const range = (start:any, end:any, length = end - start + 1) => Array.from({ length }, (_, i) => start + i);
 
-const Home = ( {posts, pages}:any) => {  
+const Home = ({ posts, pages }: any) => {
+  const [agent, setAgent] = useState('');
+  const [map, setMap] = useState('');
 
-const [agent, setAgent] = useState('');
-const [map, setMap] = useState('');
+const multipleSearch = (array: any) => {
+  return array.filter(
+    (el: any) => 
+    Object.keys(el).some((parameter) => 
+    el[parameter].toString().toLowerCase().includes(agent) &&
+    el[parameter].toString().toLowerCase().includes(map)
+    )
+    )
+}
 
-const multipleSearch = (array:any) => {
-  return array.filter((el: any) =>   
-
-    Object.keys(el).some(
-      (parameter) =>
-       el[parameter].toString().toLowerCase().includes(agent) &&
-        el[parameter].toString().toLowerCase().includes(map),
-    ),
-  );
-  }
-    const filtered = multipleSearch(posts);
- 
-
-useEffect(() => {
-
-}, []);
+   const filtered = multipleSearch(posts);
 
   return (
     <div className={styles.container}>
       <main>
         <Top_bg />
+        <h1>
+          {agent}
+          {map}
+        </h1>
         <Drop_down
           agent={agent}
           map={map}
@@ -48,8 +43,7 @@ useEffect(() => {
         <div>
           <div className={styles.PostCard}>
             {filtered.map((post: any) => (
-              <PostCard key={post.slug} post={post} />  
-               
+              <PostCard key={post.slug} post={post} />
             ))}
           </div>
           <Pagination pages={pages} />
