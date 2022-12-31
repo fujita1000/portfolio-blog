@@ -1,15 +1,14 @@
 import { ReactNode } from "react";
 
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
-import style from './Layout.module.scss'
+import Footer from './Footer'
+import Header from './Header'
 interface Props {
   children: ReactNode;
 }
 
 const Layout = ({ children }: Props) => {
   return (
-    <div className={style.container}>
+    <div>
       <Header/>
       <main>{children}</main>
       <Footer/>

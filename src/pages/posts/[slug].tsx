@@ -41,7 +41,6 @@ export async function getStaticPaths() {
       slug: fileName.replace(/\.md$/, ''),
     },
   }));
-  console.log('paths:', paths);
   return {
     paths,
     fallback: false,
@@ -108,6 +107,15 @@ const Post = ({ frontMatter, content, slug }: params) => {
         </div>
         <h1>{frontMatter.title}</h1>
         <span>{frontMatter.date}</span>
+        <div>
+          {frontMatter.categories.map((category: any) => (
+            <span key={category}>
+              <Link href={`/categories/${category}`}>
+                <a>{category}</a>
+              </Link>
+            </span>
+          ))}
+        </div>
         {toReactNode(content)}
       </div>
     </>

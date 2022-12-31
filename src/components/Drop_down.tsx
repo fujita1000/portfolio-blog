@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import styles from './Drop_down.module.scss';
 interface DropDownFrom {
   agent:any,
   map:any,
@@ -11,17 +10,17 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
 
   return (
     <>
-      <div className={styles.dropdown_con}>
-        <div className={styles.dropdown}>
-          <label className={styles.reletive}>
-            <h2 className={styles.h2}>エージェント選択</h2>
+      <div className='relative -my-24 flex justify-center'>
+        <div className='flex w-10/12 justify-between '>
+          <label className='w-5/12'>
+            <h2 className='text-center text-5xl text-wtext'>エージェント選択</h2>
             <form>
-              <div className={styles.agent}>
+              <div>
                 <select
+                  className='my-4 h-16 w-full rounded-xl border-4 border-solid border-btext bg-main text-center text-3xl text-wtext'
                   name='agent'
-                  className={styles.dropdown_item}
-                  onChange={(e) => onChangeAgent(e)}
                   id='agent'
+                  onChange={(e) => onChangeAgent(e)}
                 >
                   <option value=''> ALL </option>
                   <option value='ブリム'>ブリム</option>
@@ -49,15 +48,15 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
             </form>
           </label>
 
-          <label className={styles.reletive}>
-            <h2 className={styles.h2}>マップ選択</h2>
+          <label className='w-5/12 '>
+            <h2 className='text-center text-5xl text-wtext'>マップ選択</h2>
             <form>
               <div>
                 <select
+                  className='my-4 h-16 w-full rounded-xl border-4 border-solid border-btext bg-main text-center text-3xl text-wtext'
                   name='map'
-                  className={styles.dropdown_item}
-                  onChange={(e) => onChangeMap(e)}
                   id='map'
+                  onChange={(e) => onChangeMap(e)}
                 >
                   <option value=''>ALL</option>
                   <option value='パール'>パール</option>

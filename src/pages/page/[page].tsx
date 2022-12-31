@@ -5,11 +5,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import Drop_down from '../../components/Drop_down/Drop_down';
-import Pagination from '../../components/Pagination/Pagination';
-import PostCard from '../../components/PostCard/postCard';
-import Top_bg from '../../components/Top_bg/Top_bg';
-import styles from '../../styles/Home.module.scss';
+import Drop_down from '../../components/Drop_down';
+import Pagination from '../../components/Pagination';
+import Top_bg from '../../components/Top_bg';
+import PostCard from '../../components/postCard';
 import { LIST_LIMIT } from '@/pages/api/pagination';
 
 interface Home {
@@ -32,10 +31,8 @@ const Page: NextPage<Home> = ({ posts, pages, current_page }: any) => {
 
     const filtered = multipleSearch(posts);
 
-
-  console.log(posts);
   return (
-    <div className={styles.container}>
+    <div>
       <main>
         <Top_bg />
         <Drop_down
@@ -45,7 +42,7 @@ const Page: NextPage<Home> = ({ posts, pages, current_page }: any) => {
           onChangeMap={(e) => setMap(e.target.value)}
         />
         <div>
-          <div className={styles.PostCard}>
+          <div>
            {filtered.map((post: any)  => (
               <PostCard key={post.slug} post={post} />
             ))}
