@@ -1,5 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import { toc } from 'mdast-util-toc';
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,7 +14,13 @@ import remarkRehype from 'remark-rehype';
 import remarkToc from 'remark-toc';
 import { unified } from 'unified';
 import { params } from '../../utils/types';
-import styles from './slug.module.scss';
+
+const getToc = (options: any) => {
+  return (node: any) => {
+    const result = toc(node, options);
+    node.children = [result.map];
+  };
+};
 
 export async function getStaticProps({ params }: params) {
 
@@ -30,7 +37,19 @@ const result = await unified()
   .use(rehypeStringify)
   .process(content);
 
-  return { props: { frontMatter: data, content: result.toString() } };
+const toc = await unified()
+  .use(remarkParse)
+  .use(getToc, {
+    heading: '目次',
+    tight: true,
+  })
+  // @ts-ignore
+  .use(remarkRehype)
+  .use(rehypeStringify)
+  .process(content);
+
+  
+  return { props: { frontMatter: data, content: result.toString(), toc: toc.toString() } };
   
 }
 
@@ -79,7 +98,7 @@ function MyLink({ children, href }: any) {
   );
 }
 
-const Post = ({ frontMatter, content, slug }: params) => {
+const Post = ({ frontMatter, content, slug, toc }: params) => {
   return (
     <>
       <NextSeo
@@ -100,23 +119,30 @@ const Post = ({ frontMatter, content, slug }: params) => {
           ],
         }}
       />
+      <div className='bg-sub'>
+      <div className='m-auto flex w-[1200px]'>
+        <div>
+          <div className='relative mt-20 h-96 w-[850px]'>
+            <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
+          </div>
+          <h1>{frontMatter.title}</h1>
+          <span>{frontMatter.date}</span>
+          <div>
+            {frontMatter.categories.map((category: any) => (
+              <span key={category}>
+                <Link href={`/categories/${category}`}>
+                  <a>{category}</a>
+                </Link>
+              </span>
+            ))}
+          </div>
+          {toReactNode(content)}
+        </div>
 
-      <div>
-        <div>
-          <Image src={`/${frontMatter.image}`} width={400} height={400} alt={frontMatter.title} />
+        <div className='sticky top-[50px] mt-20 ml-10 w-[325px]'>
+          <div dangerouslySetInnerHTML={{ __html: toc }}></div>
         </div>
-        <h1>{frontMatter.title}</h1>
-        <span>{frontMatter.date}</span>
-        <div>
-          {frontMatter.categories.map((category: any) => (
-            <span key={category}>
-              <Link href={`/categories/${category}`}>
-                <a>{category}</a>
-              </Link>
-            </span>
-          ))}
-        </div>
-        {toReactNode(content)}
+      </div>
       </div>
     </>
   );

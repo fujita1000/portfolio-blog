@@ -3,8 +3,7 @@ import matter from 'gray-matter';
 import Image from 'next/image';
 import React from 'react';
 import PostCard from '@/components/postCard';
-
-
+import { LIST_LIMIT } from '@/pages/api/ReadMore';
 
 export const getStaticProps = ({ params }:any) => {
   const files = fs.readdirSync('posts');
@@ -20,6 +19,7 @@ export const getStaticProps = ({ params }:any) => {
 
   const category = params.category;
 
+
   const filteredPosts = posts.filter((post) => {
     return post.frontMatter.categories.includes(category);
   });
@@ -28,15 +28,45 @@ export const getStaticProps = ({ params }:any) => {
     new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1,
   );
 
+
   return {
     props: {
+      category,
       posts: sortedPosts,
     },
   };
 };
 
 export const getStaticPaths = () => {
-  const categories = ['ヴァイパー', 'ブリム' , 'アストラ', 'フェイド'];
+  const categories = [
+    'アストラ',
+    'ヴァイパー',
+    'オーメン',
+    'キルジョイ',
+    'KAY/O',
+    'サイファー',
+    'ジェット',
+    'スカイ',
+    'セージ',
+    'ソーヴァ',
+    'ネオン',
+    'ハーバー',
+    'フェイド',
+    'フェニックス',
+    'ブリム',
+    'ブリーチ',
+    'ヨル',
+    'レイズ',
+    'レイナ',
+    'アイスボックス',
+    'アセント',
+    'スプリット',
+    'バインド',
+    'パール',
+    'フラクチャー',
+    'ブリーズ',
+    'ヘイブン',
+  ];
   const paths = categories.map((category) => ({ params: { category } }));
 
   return {
@@ -45,13 +75,16 @@ export const getStaticPaths = () => {
   };
 };
 
-const Category = ({ posts }:any) => {
+const Category = ({ posts, category, pages }: any) => {
   return (
-    <div>
-      <div>
-        {posts.map((post: any) => (
-          <PostCard key={post.slug} post={post} />
-        ))}
+    <div className='w-100 h-full bg-sub'>
+      <div className='m-auto w-11/12 pt-16 pb-20 '>
+        <h1 className='mb-16 text-4xl'>{category}</h1>
+        <div className='-mt-10 flex flex-wrap justify-between'>
+          {posts.map((post: any) => (
+            <PostCard key={post.slug} post={post} />
+          ))}
+        </div>
       </div>
     </div>
   );

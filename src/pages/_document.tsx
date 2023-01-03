@@ -8,6 +8,7 @@ class Document extends NextDocument<Props> {
     return (
       <Html lang="ja">     
       <Head>
+        
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -37,7 +38,7 @@ class Document extends NextDocument<Props> {
 
       <meta charSet="utf-8" />
       <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, width=device-width, initial-scale=1" />
-      <meta name="keywords" content="Valorant valorant 空爆" />
+      <meta name="keywords" content="Valorant火薬庫 valorant 空爆" />
       <meta name="google" content="nositelinkssearchbox" />
 
         </Head>

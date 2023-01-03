@@ -1,12 +1,12 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default{
-  title: 'Valorant火薬庫',
-  description: '23卒の就活性の藤田直生のポートフォリオです。GSAPとjQuaryを使ったアニメーションが得意です。採用よろしくお願いいたします。',
+  title: 'VALORANT火薬庫',
+  description: 'VALORANT火薬庫です。よく使う空爆やセット、壁抜きの記事を掲載しています。',
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
     url: 'http://localhost:3000',
-    site_name: 'Valorant火薬庫',
+    site_name: 'VALORANT火薬庫',
   },
   twitter: {
     handle: '@handle',
