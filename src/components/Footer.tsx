@@ -9,7 +9,9 @@ const Footer = () => {
           <Link href='/'>
             <p className='my-4'>HOME</p>
           </Link>
+          <Link href='/privacy-policy'>
           <p className='my-4'>ABOUT ME</p>
+          </Link>
         </div>
         <Link href='/'>
           <Image src={'/logo.png'} alt='VALORANT火薬庫のロゴ' width={200} height={200}></Image>

@@ -13,6 +13,7 @@ import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkToc from 'remark-toc';
 import { unified } from 'unified';
+import Profile from "../../components/Profile";
 import { params } from '../../utils/types';
 
 const getToc = (options: any) => {
@@ -120,29 +121,35 @@ const Post = ({ frontMatter, content, slug, toc }: params) => {
         }}
       />
       <div className='bg-sub'>
-      <div className='m-auto flex w-[1200px]'>
-        <div>
-          <div className='relative mt-20 h-96 w-[850px]'>
-            <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
-          </div>
-          <h1>{frontMatter.title}</h1>
-          <span>{frontMatter.date}</span>
+        <div className='m-auto flex w-[1200px]'>
           <div>
-            {frontMatter.categories.map((category: any) => (
-              <span key={category}>
-                <Link href={`/categories/${category}`}>
-                  <a>{category}</a>
-                </Link>
-              </span>
-            ))}
+            <div className='relative mt-20 h-[478px] w-[850px]'>
+              <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
+            </div>
+            <h1>{frontMatter.title}</h1>
+            <span>{frontMatter.date}</span>
+            <div>
+              {frontMatter.categories.map((category: any) => (
+                <span key={category}>
+                  <Link href={`/categories/${category}`}>
+                    <a>{category}</a>
+                  </Link>
+                </span>
+              ))}
+            </div>
+            {toReactNode(content)}
           </div>
-          {toReactNode(content)}
-        </div>
 
-        <div className='sticky top-[50px] mt-20 ml-10 w-[325px]'>
-          <div dangerouslySetInnerHTML={{ __html: toc }}></div>
+          <div className='ml-8 mt-20 w-[325px]'>
+            <div className='h-[478px]'>
+              <Profile />
+            </div>
+
+            <div className='sticky top-[50px] mt-10 w-[325px]'>
+              <div dangerouslySetInnerHTML={{ __html: toc }}></div>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );

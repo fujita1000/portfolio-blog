@@ -72,7 +72,7 @@ const Home = ({ posts}: any) => {
           }}
         />
         <div className='m-auto w-11/12 pt-40 pb-20 '>
-          <div className='flex flex-wrap justify-between -mt-10'>
+          <div className='-mt-10 flex flex-wrap justify-between'>
             {filtered.map((post: any) => (
               <PostCard key={post.slug} post={post} />
             ))}
