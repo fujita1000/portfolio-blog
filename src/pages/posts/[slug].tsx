@@ -14,7 +14,9 @@ import remarkRehype from 'remark-rehype';
 import remarkToc from 'remark-toc';
 import { unified } from 'unified';
 import Profile from "../../components/Profile";
+import SintyakuCard from "../../components/SintyakuCard";
 import { params } from '../../utils/types';
+import { SINTYAKU_LIMIT } from '../api/SintyakuLimit';
 
 const getToc = (options: any) => {
   return (node: any) => {
@@ -24,6 +26,26 @@ const getToc = (options: any) => {
 };
 
 export async function getStaticProps({ params }: params) {
+  const files = fs.readdirSync('posts');
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace(/\.md$/, '');
+    const fileContent = fs.readFileSync(`posts/${fileName}`, 'utf-8');
+    const { data } = matter(fileContent);
+
+    return {
+      frontMatter: data,
+      slug,
+    };
+  });
+
+  const sortedPosts = posts.sort((postA, postB) =>
+    new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1,
+  );
+
+    const slicedPosts = sortedPosts.slice(
+      SINTYAKU_LIMIT * (1 - 1),
+      SINTYAKU_LIMIT * 1,
+    );
 
   const file = fs.readFileSync(`posts/${params.slug}.md`, 'utf-8');
   const { data, content } = matter(file);
@@ -49,8 +71,14 @@ const toc = await unified()
   .use(rehypeStringify)
   .process(content);
 
-  
-  return { props: { frontMatter: data, content: result.toString(), toc: toc.toString() } };
+  return {
+    props: {
+      posts: slicedPosts,
+      frontMatter: data,
+      content: result.toString(),
+      toc: toc.toString(),
+    },
+  };
   
 }
 
@@ -99,7 +127,7 @@ function MyLink({ children, href }: any) {
   );
 }
 
-const Post = ({ frontMatter, content, slug, toc }: params) => {
+const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
   return (
     <>
       <NextSeo
@@ -143,6 +171,13 @@ const Post = ({ frontMatter, content, slug, toc }: params) => {
           <div className='ml-8 mt-20 w-[325px]'>
             <div className='h-[478px]'>
               <Profile />
+            </div>
+
+            <div className='h-[800px] mt-14'>
+              <h3 className='text-3xl'>新着記事</h3>
+              {posts.map((post: any) => (
+                <SintyakuCard key={post.slug} post={post} />
+              ))}
             </div>
 
             <div className='sticky top-[50px] mt-10 w-[325px]'>

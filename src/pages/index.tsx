@@ -6,9 +6,6 @@ import Top_bg from '../components/Top_bg';
 import PostCard from '../components/postCard';
 import { LIST_LIMIT } from '@/pages/api/ReadMore';
 
-
-
-
 export const getStaticProps = () => { 
 
   const files = fs.readdirSync('posts');

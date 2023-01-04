@@ -1,0 +1,1 @@
+export const SINTYAKU_LIMIT = 3
