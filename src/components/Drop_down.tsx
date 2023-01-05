@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 interface DropDownFrom {
   agent:any,

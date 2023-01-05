@@ -1,9 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Image from 'next/image';
 import React from 'react';
 import PostCard from '@/components/postCard';
-import { LIST_LIMIT } from '@/pages/api/ReadMore';
 
 export const getStaticProps = ({ params }:any) => {
   const files = fs.readdirSync('posts');

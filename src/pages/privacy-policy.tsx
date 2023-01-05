@@ -1,6 +1,6 @@
 
 
-const Home = () => {
+const Privacy = () => {
 
   return (
     <div className='w-full bg-sub'>
@@ -81,4 +81,4 @@ const Home = () => {
  
 };
 
-export default Home;
+export default Privacy;
