@@ -1,3 +1,4 @@
-export const LIST_LIMIT =  20
+export const LIST_LIMIT =  3
 
 // value === category
+
