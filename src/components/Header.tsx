@@ -34,7 +34,7 @@ closeButton!.addEventListener('click', () => {
       <div className='w-250 m-auto h-[70px] bg-btext'>
         <div className='m-auto flex h-[70px] w-11/12  items-center justify-between text-wtext'>
           <Link href='/'>
-            <Image src={'/logo.png'} alt='ロゴ' width={65} height={65}></Image>
+            <Image src={'/dev/logo.png'} alt='ロゴ' width={65} height={65}></Image>
           </Link>
           <Link href='/'>
             <h1 className='text-5xl text-wtext'>VALORANT火薬庫</h1>
@@ -57,7 +57,7 @@ closeButton!.addEventListener('click', () => {
       </div>
 
       <div
-        className='fixed  top-0 right-0 z-50 h-screen w-2/4 translate-x-[1000px] bg-main'
+        className='fixed  top-0 right-0 z-50 h-screen 2xl:w-[700px] translate-x-[1000px] bg-main'
         id='nav'
       >
         <div id='close'>

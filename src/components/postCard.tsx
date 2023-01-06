@@ -6,7 +6,7 @@ const PostCard = ({ post }: post) => {
   return (
     <Link href={`/posts/${post.slug}`}>
       <a>
-        <div className='h-100 my-10 w-[370px] 2xl:w-[400px] '>
+        <div className='h-100 my-4 w-[370px] 2xl:w-full '>
           <div>
             <Image
               src={`/${post.frontMatter.image}`}
@@ -16,9 +16,8 @@ const PostCard = ({ post }: post) => {
             />
           </div>
           <div>
-            <h1>{post.frontMatter.title}</h1>
-            <span>{post.frontMatter.date}</span>
-            <span className=' line-clamp-3'>{post.frontMatter.description}</span>
+            <h1 className='2xl:mt-4 2xl:text-xl'>{post.frontMatter.title}</h1>
+            <p className='2xl:mt-4'>{post.frontMatter.date}</p>
           </div>
         </div>
       </a>

@@ -18,7 +18,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
             <h2 className='text-center text-5xl text-wtext'>エージェント選択</h2>
             <form className='relative h-11 w-full'>
               <div className='absolute inset-y-2/4 left-4'>
-                <Image src={'/down_logo.svg'} alt='select画像' width={60} height={60} />
+                <Image src={'/dev/down_logo.svg'} alt='select画像' width={60} height={60} />
               </div>
               <div>
                 <select
@@ -57,7 +57,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
             <h2 className='text-center text-5xl text-wtext'>マップ選択</h2>
             <form className='relative h-11 w-full '>
               <div className='absolute inset-y-2/4 left-4'>
-                <Image src={'/down_logo.svg'} alt='select画像' width={60} height={60} />
+                <Image src={'/dev/down_logo.svg'} alt='select画像' width={60} height={60} />
               </div>
               <div>
                 <select

@@ -14,10 +14,10 @@ const Footer = () => {
           </Link>
         </div>
         <Link href='/'>
-          <Image src={'/logo.png'} alt='VALORANT火薬庫のロゴ' width={200} height={200}></Image>
+          <Image src={'/dev/logo.png'} alt='VALORANT火薬庫のロゴ' width={200} height={200}></Image>
         </Link>
         <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/OomiyaGG'>
-          <Image src={'/twitter_logo.svg'} alt='twitterのロゴ' width={200} height={200}></Image>
+          <Image src={'/dev/twitter_logo.svg'} alt='twitterのロゴ' width={200} height={200}></Image>
         </a>
       </div>
       <p className='py-4 text-center text-3xl'>

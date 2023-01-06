@@ -7,7 +7,7 @@ const Profile = () => {
       <div className='h-[478px] w-full bg-main'>
         <div className='relative top-[15px] m-auto h-[150px] w-[150px] rounded-2xl'>
           <Image
-            src={'/oomiya.jpg'}
+            src={'/dev/oomiya.jpg'}
             alt='大宮のロゴ'
             layout='fill'
             objectFit='contain'

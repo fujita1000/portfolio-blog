@@ -42,10 +42,9 @@ const Home = ({ posts }: any) => {
     const wh = window.innerHeight;
 
     MoreReadButton!.addEventListener('click', () => {
-      tl.to(Height, { height: 3350 });
+      tl.to(Height, { height: 2300 });
       tl.to(MoreReadButton, { opacity: 0, display: 'none' },">");
       tl.to(MoreReadBox, { opacity: 0, display: 'none' },">");
-      console.log(wh);
       tl.play();
     });
 
@@ -84,7 +83,7 @@ const Home = ({ posts }: any) => {
         />
         <div className='m-auto w-11/12 pt-40 pb-20 '>
           <div
-            className='-mt-10  grid h-[1400px] grid-cols-3 justify-between gap-10 overflow-hidden pb-10'
+            className=' grid 2xl:h-[1390px]  m-auto 2xl:grid-cols-4 justify-between gap-10 overflow-hidden pb-3'
             id='height'
           >
             {filtered.map((post: any) => (

@@ -12,11 +12,15 @@ import rehypeStringify from 'rehype-stringify';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkToc from 'remark-toc';
+import remarkUnwrapImages from 'remark-unwrap-images';
 import { unified } from 'unified';
 import Profile from "../../components/Profile";
 import SintyakuCard from "../../components/SintyakuCard";
 import { params } from '../../utils/types';
 import { SINTYAKU_LIMIT } from '../api/SintyakuLimit';
+
+
+
 
 const getToc = (options: any) => {
   return (node: any) => {
@@ -31,7 +35,6 @@ export async function getStaticProps({ params }: params) {
     const slug = fileName.replace(/\.md$/, '');
     const fileContent = fs.readFileSync(`posts/${fileName}`, 'utf-8');
     const { data } = matter(fileContent);
-
     return {
       frontMatter: data,
       slug,
@@ -55,6 +58,7 @@ const result = await unified()
   .use(remarkToc, {
     heading: '目次',
   })
+  .use(remarkUnwrapImages)
   .use(remarkRehype)
   .use(rehypeSlug)
   .use(rehypeStringify)
@@ -112,7 +116,7 @@ const toReactNode = (content :params) => {
 };
 
 const MyImage = ({ src, alt }: any) => {
-  return <Image src={src} alt={alt} width='400' height='400' />;
+  return <Image src={src} alt={alt} width={840} height={473} />;
 };
 
 function MyLink({ children, href }: any) {
@@ -149,24 +153,33 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
           ],
         }}
       />
+
       <div className='bg-sub'>
         <div className='m-auto flex w-[1200px]'>
           <div>
             <div className='relative mt-20 h-[478px] w-[850px]'>
               <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
             </div>
-            <h1>{frontMatter.title}</h1>
-            <span>{frontMatter.date}</span>
-            <div>
+            <h1 className='mt-10 text-4xl  leading-[50px]'>{frontMatter.title}</h1>
+            <p className='mt-4 text-2xl'>{frontMatter.date}</p>
+            <div className='mt-[10px] flex  text-wtext '>
               {frontMatter.categories.map((category: any) => (
-                <span key={category}>
+                <p
+                  key={category}
+                  className='mr-[20px] flex h-[30px] items-center justify-center rounded-2xl bg-main pr-[30px] pl-[30px]'
+                >
                   <Link href={`/categories/${category}`}>
-                    <a>{category}</a>
+                    <a className='text-wtext'>{category}</a>
                   </Link>
-                </span>
+                </p>
               ))}
             </div>
-            {toReactNode(content)}
+
+            <div className='mb-[200px]'>
+              <div className='mt-10 p-0 prose-h4:mt-10 prose-h4:text-[40px]  prose-p:pt-[10px]  prose-p:leading-[35px] prose-li:ml-[30px] prose-li:list-disc  prose-li:text-[30px] prose-li:underline [&>h3]:mt-10 [&>h3]:text-[40px]  [&>img]:my-10 [&>h2]:mt-10 [&>h2]:text-[40px] [&>ul]:ml-[30px] [&>p]:my-[10px]  [&>p]:text-[20px]'>
+                {toReactNode(content)}
+              </div>
+            </div>
           </div>
 
           <div className='ml-8 mt-20 w-[325px]'>
@@ -174,15 +187,17 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               <Profile />
             </div>
 
-            <div className='h-[800px] mt-14'>
+            <div className='mt-14 h-[800px]'>
               <h3 className='text-3xl'>新着記事</h3>
               {posts.map((post: any) => (
                 <SintyakuCard key={post.slug} post={post} />
               ))}
             </div>
-
-            <div className='sticky top-[50px] mt-10 w-[325px]'>
-              <div dangerouslySetInnerHTML={{ __html: toc }}></div>
+            <div className='prose sticky  top-[50px] mt-[150px] mb-[200px] w-[325px] '>
+              <div className='h-full w-full rounded-[30px] border-4 border-main'>
+                <p className='text-center text-3xl '>目次</p>
+                <div dangerouslySetInnerHTML={{ __html: toc }}></div>
+              </div>
             </div>
           </div>
         </div>

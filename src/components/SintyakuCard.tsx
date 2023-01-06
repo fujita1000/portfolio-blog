@@ -7,7 +7,7 @@ const SintyakuCard = ({ post }: post) => {
   return (
     <Link href={`/posts/${post.slug}`}>
       <a>
-        <div className='h-100 mt-[10px] w-[370px] 2xl:w-[400px] '>
+        <div className='h-100 mt-[10px] mb-8  w-[370px] 2xl:w-[400px] '>
           <div>
             <Image
               src={`/${post.frontMatter.image}`}
@@ -18,6 +18,7 @@ const SintyakuCard = ({ post }: post) => {
           </div>
           <div className='w-[325px]'>
             <h1>{post.frontMatter.title}</h1>
+            <p>{post.frontMatter.date}</p>
           </div>
         </div>
       </a>

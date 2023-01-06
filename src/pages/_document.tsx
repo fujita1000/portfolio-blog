@@ -6,7 +6,8 @@ type Props = {}
 class Document extends NextDocument<Props> {
   render() {
     return (
-      <Html lang="ja">     
+      <Html lang="ja">   
+        
       <Head>
         
       <link
@@ -35,11 +36,12 @@ class Document extends NextDocument<Props> {
       <link rel="shortcut icon" href="/favicons/favicon.ico" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
-
+      
       <meta charSet="utf-8" />
       <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, width=device-width, initial-scale=1" />
       <meta name="keywords" content="Valorant火薬庫 valorant 空爆" />
       <meta name="google" content="nositelinkssearchbox" />
+    
 
         </Head>
         <body>
