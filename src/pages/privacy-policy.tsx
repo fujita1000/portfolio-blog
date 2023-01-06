@@ -74,7 +74,9 @@ const Privacy = () => {
         </p>
         <br />
         <h3>運営者について</h3>
+                <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/OomiyaGG'>
         <p>twitter:@OomiyaGG</p>
+        </a>
       </div>
     </div>
   ); 

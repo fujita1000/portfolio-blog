@@ -5,8 +5,11 @@ import '../styles/globals.css';
 import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import React from 'react';
 import SEO from "../../next-seo.config";
 import Layout from '@/components/Layout';
+
+
 
 function MyApp({ Component, pageProps}: AppProps) {
 const router = useRouter();
