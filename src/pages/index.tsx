@@ -31,26 +31,7 @@ export const getStaticProps = () => {
 };
 
 const Home = ({ posts }: any) => {
-
-    useEffect(() => {
-    console.clear();
-    const tl = gsap.timeline({ paused: true, defaults: { duration: 0.3 } });
-
-    const Height = document.querySelector('#height');
-    const MoreReadButton = document.querySelector('#MoreRead');
-    const MoreReadBox = document.querySelector('#MoreReadBox');
-    const wh = window.innerHeight;
-
-    MoreReadButton!.addEventListener('click', () => {
-      tl.to(Height, { height: 2300 });
-      tl.to(MoreReadButton, { opacity: 0, display: 'none' },">");
-      tl.to(MoreReadBox, { opacity: 0, display: 'none' },">");
-      tl.play();
-    });
-
-
-    }, []);
-
+  
   const [agent, setAgent] = useState('');
   const [map, setMap] = useState('');
 
@@ -83,7 +64,7 @@ const Home = ({ posts }: any) => {
         />
         <div className='m-auto w-11/12 pt-[50px] pb-20 md:pt-[100px] xl:pt-[130px] '>
           <div
-            className='m-auto grid h-[1870px] grid-cols-1 justify-between gap-[30px] overflow-hidden pb-3 md:grid-cols-2  md:gap-[40px] xl:grid-cols-3 xl:gap-[80px] 2xl:grid-cols-4 2xl:gap-[50px]'
+            className='m-auto grid h-[1870px] md:h-[1920px] lg:h-[1940px] xl:h-[2080px] 2xl:h-[2300px] grid-cols-1 justify-between gap-[30px] overflow-hidden pb-3 md:grid-cols-2  md:gap-[40px] xl:grid-cols-3 xl:gap-[70px] 2xl:grid-cols-4 2xl:gap-[50px]'
             id='height'
           >
             
@@ -91,16 +72,8 @@ const Home = ({ posts }: any) => {
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
-          <div
-            className='relative mt-10 h-[200px] w-full bg-main opacity-30'
-            id='MoreReadBox'
-          ></div>
-          <p
-            className='relative z-10 -mt-[120px] mb-20 text-center text-4xl text-btext'
-            id='MoreRead'
-          >
-            ↓もっとみる
-          </p>
+
+
         </div>
       </main>
     </div>

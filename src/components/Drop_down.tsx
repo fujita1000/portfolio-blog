@@ -12,15 +12,15 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
 
   return (
     <>
-      <div className='relative -my-14 flex justify-center md:-my-[80px] xl:-my-[100px]'>
+      <div className='relative -my-14 flex justify-center md:-my-[80px] 2xl:-my-[100px]'>
         <div className='mb-10 flex w-11/12 justify-between'>
           <label className='mt-[3px] w-5/12'>
-            <h2 className='text-1xl text-center text-wtext md:text-[30px] xl:text-[40px] '>
+            <h2 className='text-1xl text-center text-wtext md:text-[30px] 2xl:text-[40px] '>
               エージェント選択
             </h2>
             <form className='relative -mt-[10px] h-11 w-full'>
               <div className='absolute inset-y-2/4 left-[10px] md:left-[15px]'>
-                <div className='relative hidden h-[30px] w-[30px] md:flex md:h-[40px] md:w-[40px]  xl:h-[50px]  xl:w-[50px]'>
+                <div className='relative hidden h-[30px] w-[30px] md:flex md:h-[40px] md:w-[40px]  2xl:h-[50px]  2xl:w-[50px]'>
                   <Image
                     src={'/dev/down_logo.svg'}
                     alt='select画像'
@@ -31,7 +31,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
               </div>
               <div>
                 <select
-                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main text-center text-wtext md:h-[50px] md:text-[25px] xl:h-[60px] xl:text-[35px] '
+                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main text-center text-wtext md:h-[50px] md:text-[25px] 2xl:h-[60px] 2xl:text-[35px] '
                   name='agent'
                   id='agent'
                   onChange={(e) => onChangeAgent(e)}
@@ -63,12 +63,12 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
           </label>
 
           <label className='mt-[3px] w-5/12'>
-            <h2 className='text-1xl text-center text-wtext md:text-[30px] xl:text-[40px]'>
+            <h2 className='text-1xl text-center text-wtext md:text-[30px] 2xl:text-[40px] '>
               マップ選択
             </h2>
             <form className='relative -mt-[10px] h-11 w-full'>
               <div className='absolute inset-y-2/4 left-[10px] md:left-[15px]'>
-                <div className='relative hidden  h-[30px] w-[30px] md:flex md:h-[40px] md:w-[40px]  xl:h-[50px]  xl:w-[50px]'>
+                <div className='relative hidden h-[30px] w-[30px] md:flex md:h-[40px] md:w-[40px]  2xl:h-[50px]  2xl:w-[50px]'>
                   <Image
                     src={'/dev/down_logo.svg'}
                     alt='select画像'
@@ -80,7 +80,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
               </div>
               <div>
                 <select
-                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main text-center text-wtext md:h-[50px] md:text-[25px] xl:h-[60px] xl:text-[35px] '
+                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main text-center text-wtext md:h-[50px] md:text-[25px] 2xl:h-[60px] 2xl:text-[35px] '
                   name='map'
                   id='map'
                   onChange={(e) => onChangeMap(e)}
