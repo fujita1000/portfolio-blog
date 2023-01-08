@@ -4,8 +4,8 @@ const Privacy = () => {
 
   return (
     <div className='w-full bg-sub'>
-      <div className='m-auto w-[1200px] pt-[100px] pb-20 [&>h3]:text-[30px] [&>p]:text-[20px]'>
-        <h2 className='text-[40px]'>プライバシーポリシー</h2>
+      <div className='m-auto w-11/12 pb-20 pt-10 [&>h3]:text-[20px] md:[&>h3]:text-[25px] xl:[&>h3]:text-[30px] [&>p]:text-[16px] md:[&>p]:text-[20px] xl:[&>p]:text-[25px] 2xl:[&>h3]:text-[35px] 2xl:[&>p]:text-[25px]'>
+        <h2 className='text-[25px] md:text-[30px] xl:text-[35px] 2xl:text-[40px]'>プライバシーポリシー</h2>
         <br />
         <h3>個人情報の利用目的</h3>
         <p>
@@ -20,7 +20,7 @@ const Privacy = () => {
             rel='noopener noreferrer'
             href='https://marketingplatform.google.com/about/analytics/terms/jp'
           >
-            https://marketingplatform.google.com/about/analytics/terms/jp
+            <p>「-Googleアナリティクスの利用規約-」</p>
           </a>
         </p>
         <br />
@@ -74,8 +74,8 @@ const Privacy = () => {
         </p>
         <br />
         <h3>運営者について</h3>
-                <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/OomiyaGG'>
-        <p>twitter:@OomiyaGG</p>
+        <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/OomiyaGG'>
+          <p>twitter:@OomiyaGG</p>
         </a>
       </div>
     </div>

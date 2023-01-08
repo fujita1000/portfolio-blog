@@ -77,9 +77,12 @@ export const getStaticPaths = () => {
 const Category = ({ posts, category, pages }: any) => {
   return (
     <div className='w-100 h-full bg-sub'>
-      <div className='m-auto w-11/12 pt-16 pb-20 '>
-        <h1 className='mb-16 text-4xl'>{category}</h1>
-        <div className='-mt-10 flex flex-wrap justify-between'>
+      <div className='m-auto w-11/12 pt-[40px] pb-20 xl:pt-[60px]'>
+        <h1 className='mb-[20px] xl:mb-[40px] text-3xl md:text-4xl xl:text-5xl'>{category}</h1>
+        <div
+          className='m-auto grid grid-cols-1 justify-between gap-[30px] overflow-hidden pb-3 md:grid-cols-2  md:gap-[40px] xl:grid-cols-3 xl:gap-[80px] 2xl:grid-cols-4    2xl:gap-[30px]'
+          id='height'
+        >
           {posts.map((post: any) => (
             <PostCard key={post.slug} post={post} />
           ))}

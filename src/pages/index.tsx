@@ -81,11 +81,12 @@ const Home = ({ posts }: any) => {
             setMap(e.target.value);
           }}
         />
-        <div className='m-auto w-11/12 pt-40 pb-20 '>
+        <div className='m-auto w-11/12 pt-[50px] pb-20 md:pt-[100px] xl:pt-[130px] '>
           <div
-            className=' grid 2xl:h-[1390px]  m-auto 2xl:grid-cols-4 justify-between gap-10 overflow-hidden pb-3'
+            className='m-auto grid h-[1870px] grid-cols-1 justify-between gap-[30px] overflow-hidden pb-3 md:grid-cols-2  md:gap-[40px] xl:grid-cols-3 xl:gap-[80px] 2xl:grid-cols-4 2xl:gap-[50px]'
             id='height'
           >
+            
             {filtered.map((post: any) => (
               <PostCard key={post.slug} post={post} />
             ))}

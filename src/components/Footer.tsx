@@ -3,24 +3,38 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className='w-full bg-main pt-24 text-wtext'>
-      <div className='m-auto flex  h-60 w-11/12 items-center justify-between'>
-        <div className='text-5xl'>
+    <footer className='w-full bg-main pt-4 text-wtext 2xl:pt-10'>
+      <div className='m-auto flex  w-11/12 items-center justify-between'>
+        <div className='text-1xl'>
           <Link href='/'>
-            <p className='my-4'>HOME</p>
+            <p className='my-4 md:text-[20px] 2xl:text-[30px]'>HOME</p>
           </Link>
           <Link href='/privacy-policy'>
-            <p className='my-4'>ABOUT ME</p>
+            <p className='my-4 md:text-[20px] 2xl:text-[30px]'>ABOUT ME</p>
           </Link>
         </div>
         <Link href='/'>
-          <Image src={'/dev/logo.png'} alt='VALORANT火薬庫のロゴ' width={200} height={200}></Image>
+          <div className='relative h-[100px] w-[100px] md:h-[120px] md:w-[120px] 2xl:h-[150px] 2xl:w-[150px]'>
+            <Image
+              src={'/dev/logo.png'}
+              alt='VALORANT火薬庫のロゴ'
+              layout='fill'
+              objectFit='contain'
+            ></Image>
+          </div>
         </Link>
         <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/OomiyaGG'>
-          <Image src={'/dev/twitter_logo.svg'} alt='twitterのロゴ' width={200} height={200}></Image>
+          <div className='relative h-[100px] w-[100px]  md:h-[120px] md:w-[120px] 2xl:h-[150px] 2xl:w-[150px]'>
+            <Image
+              src={'/dev/twitter_logo.svg'}
+              alt='twitterのロゴ'
+              layout='fill'
+              objectFit='contain'
+            ></Image>
+          </div>
         </a>
       </div>
-      <p className='py-4 text-center text-3xl'>
+      <p className='text-1xl 2xl:pb-10 py-4 text-center md:text-[20px] 2xl:text-[30px]'>
         Copyright - <Link href='/'>Marumazi</Link>, 2022 All Rights Reserved.
       </p>
     </footer>

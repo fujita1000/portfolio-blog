@@ -154,15 +154,17 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
         }}
       />
 
-      <div className='bg-sub'>
-        <div className='m-auto flex w-[1200px]'>
-          <div>
-            <div className='relative mt-20 h-[478px] w-[850px]'>
+      <div className=' bg-sub xl:pb-[100px]'>
+        <div className='m-auto w-[350px] pt-[30px] md:w-[550px] xl:flex xl:w-[1100px]'>
+          <div className='mr-[50px] xl:w-[900px]'>
+            <h1 className='mb-[30px] pt-[20px] text-2xl xl:mb-[50px] xl:text-3xl'>
+              {frontMatter.title}
+            </h1>
+            <div className='relative m-auto h-[211px] w-[350px] md:mb-[30px] md:h-[281] md:w-[550px] xl:h-[450px] xl:w-full'>
               <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
             </div>
-            <h1 className='mt-10 text-4xl  leading-[50px]'>{frontMatter.title}</h1>
-            <p className='mt-4 text-2xl'>{frontMatter.date}</p>
-            <div className='mt-[10px] flex  text-wtext '>
+            <p className='text-1xl mt-4'>{frontMatter.date}</p>
+            <div className='  mt-[10px] flex  text-wtext '>
               {frontMatter.categories.map((category: any) => (
                 <p
                   key={category}
@@ -174,26 +176,25 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
                 </p>
               ))}
             </div>
-
-            <div className='mb-[200px]'>
-              <div className='mt-10 p-0 prose-h4:mt-10 prose-h4:text-[40px]  prose-p:pt-[10px]  prose-p:leading-[35px] prose-li:ml-[30px] prose-li:list-disc  prose-li:text-[30px] prose-li:underline [&>h3]:mt-10 [&>h3]:text-[40px]  [&>img]:my-10 [&>h2]:mt-10 [&>h2]:text-[40px] [&>ul]:ml-[30px] [&>p]:my-[10px]  [&>p]:text-[20px]'>
+            <div>
+              <div className=' mt-10 prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px]  prose-li:ml-[30px]  prose-li:list-disc prose-li:text-[20px] prose-li:underline [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] 2xl:[&>p]:text-[20px]'>
                 {toReactNode(content)}
               </div>
             </div>
           </div>
 
-          <div className='ml-8 mt-20 w-[325px]'>
+          <div className='mt-[140px] xl:ml-[20px] xl:w-[400px]'>
             <div className='h-[478px]'>
               <Profile />
             </div>
 
-            <div className='mt-14 h-[800px]'>
+            <div className='mt-14'>
               <h3 className='text-3xl'>新着記事</h3>
               {posts.map((post: any) => (
                 <SintyakuCard key={post.slug} post={post} />
               ))}
             </div>
-            <div className='prose sticky  top-[50px] mt-[150px] mb-[200px] w-[325px] '>
+            <div className='prose sticky top-[50px] m-auto mt-[40px]  hidden w-[325px] xl:block'>
               <div className='h-full w-full rounded-[30px] border-4 border-main'>
                 <p className='text-center text-3xl '>目次</p>
                 <div dangerouslySetInnerHTML={{ __html: toc }}></div>
