@@ -5,7 +5,7 @@ export default{
   openGraph: {
     type: 'website',
     locale: 'ja_JP',
-    url: 'https://valorant-kayakuko.vercel.app',
+    url: 'https://valorant-kayakuko.com',
     site_name: 'VALORANT火薬庫',
   },
   twitter: {

@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['valorant-kayakuko.vercel.app'],
+    domains: ['localhost'],
   },
   
 }

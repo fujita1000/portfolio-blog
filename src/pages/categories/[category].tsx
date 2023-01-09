@@ -10,6 +10,7 @@ export const getStaticProps = ({ params }:any) => {
     const slug = fileName.replace(/\.md$/, '');
     const fileContent = fs.readFileSync(`posts/${fileName}`, 'utf-8');
     const { data } = matter(fileContent);
+  
     return {
       frontMatter: data,
       slug,
