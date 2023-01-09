@@ -177,7 +177,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               ))}
             </div>
             <div>
-              <div className=' mt-10 prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px]  prose-li:ml-[30px]  prose-li:list-disc prose-li:text-[20px] prose-li:underline [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] 2xl:[&>p]:text-[20px]'>
+              <div className=' mt-10 w-[350px] md:w-full prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px]  prose-li:ml-[30px]  prose-li:list-disc prose-li:text-[20px] prose-li:underline [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] 2xl:[&>p]:text-[20px]'>
                 {toReactNode(content)}
               </div>
             </div>

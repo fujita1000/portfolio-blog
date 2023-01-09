@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </a>
       </div>
-      <p className='text-1xl 2xl:pb-10 py-4 text-center md:text-[20px] 2xl:text-[30px]'>
+      <p className='text-[14px] 2xl:pb-10 py-4 text-center md:text-[20px] 2xl:text-[30px]'>
         Copyright - <Link href='/'>Marumazi</Link>, 2022 All Rights Reserved.
       </p>
     </footer>
