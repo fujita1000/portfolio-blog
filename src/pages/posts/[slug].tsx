@@ -188,8 +188,8 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               <Profile />
             </div>
 
-            <div className='mt-14'>
-              <h3 className='text-3xl'>新着記事</h3>
+            <div className='mt-14 pb-[50px]'>
+              <h3 className='text-3xl '>新着記事</h3>
               {posts.map((post: any) => (
                 <SintyakuCard key={post.slug} post={post} />
               ))}
