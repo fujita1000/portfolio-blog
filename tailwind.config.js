@@ -25,10 +25,10 @@ theme: {
   theme: {
     extend: {
         colors: {
-          'main': "#ff4655",
-          'sub': "#ece8e1",
-          'btext': "#111111",
-          'wtext': "#f9f9f9"
+          'main': "#fa4147",
+          'sub': "#fdf3ec",
+          'btext': "#000000",
+          'wtext': "#f4f9fb"
       },
     }
  
