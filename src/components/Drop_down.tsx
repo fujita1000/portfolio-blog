@@ -31,7 +31,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
               </div>
               <div>
                 <select
-                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main text-center text-wtext md:h-[50px] md:text-[25px] 2xl:h-[60px] 2xl:text-[35px] '
+                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main indent-[39%] text-wtext  md:h-[50px] md:indent-[45%] md:text-[25px] 2xl:h-[60px] 2xl:text-[35px] '
                   name='agent'
                   id='agent'
                   onChange={(e) => onChangeAgent(e)}
@@ -80,7 +80,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
               </div>
               <div>
                 <select
-                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main text-center text-wtext md:h-[50px] md:text-[25px] 2xl:h-[60px] 2xl:text-[35px] '
+                  className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main indent-[39%] text-wtext md:h-[50px] md:indent-[45%] md:text-[25px] 2xl:h-[60px] 2xl:text-[35px] '
                   name='map'
                   id='map'
                   onChange={(e) => onChangeMap(e)}

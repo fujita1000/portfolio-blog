@@ -156,11 +156,11 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
 
       <div className=' bg-sub xl:pb-[100px]'>
         <div className='m-auto w-[350px] pt-[30px] md:w-[550px] xl:flex xl:w-[1100px]'>
-          <div className='mr-[50px] xl:w-[900px]'>
+          <div className=' xl:mr-[50px] xl:w-[900px]'>
             <h1 className='mb-[30px] pt-[20px] text-2xl xl:mb-[50px] xl:text-3xl'>
               {frontMatter.title}
             </h1>
-            <div className='relative m-auto h-[211px] w-[350px] md:mb-[30px] md:h-[281] md:w-[550px] xl:h-[450px] xl:w-full'>
+            <div className='relative m-auto h-[211px] w-[350px] md:mb-[30px] md:h-[281] md:w-full xl:h-[450px] xl:w-full'>
               <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
             </div>
             <p className='text-1xl mt-4'>{frontMatter.date}</p>
@@ -177,7 +177,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               ))}
             </div>
             <div>
-              <div className=' mt-10 w-[350px] md:w-full prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px]  prose-li:ml-[30px]  prose-li:list-disc prose-li:text-[20px] prose-li:underline [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] 2xl:[&>p]:text-[20px]'>
+              <div className=' mt-10 w-[350px] prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px] prose-li:ml-[30px]  prose-li:list-disc  prose-li:text-[20px] prose-li:underline md:w-full [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] 2xl:[&>p]:text-[20px]'>
                 {toReactNode(content)}
               </div>
             </div>
