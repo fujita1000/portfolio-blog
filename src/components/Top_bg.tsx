@@ -10,7 +10,7 @@ const Top_bg = () =>
             よく使う空爆やセット、壁抜きの記事を載せてるよ
           </h2>
           <div className='h-[120px] w-screen md:h-[200px] xl:h-[200px] 2xl:h-[250px]'>
-            <Image src={'/dev/header.jpg'} layout='fill' alt='背景画像'></Image>
+            <Image src={'/dev/header.jpg'} layout='fill' alt='背景画像' priority={true} ></Image>
           </div>
         </div>
       </>
