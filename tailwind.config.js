@@ -28,7 +28,7 @@ theme: {
           'main': "#fa4147",
           'sub': "#fdf3ec",
           'btext': "#000000",
-          'wtext': "#f4f9fb"
+          'wtext': "#ffffff"
       },
     }
  

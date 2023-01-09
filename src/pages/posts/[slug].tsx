@@ -140,12 +140,12 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
         description={frontMatter.description}
         openGraph={{
           type: 'website',
-          url: `http:localhost:3000/posts/${slug}`,
+          url: `https://valorant-kayakuko.com/posts/${slug}`,
           title: frontMatter.title,
           description: frontMatter.description,
           images: [
             {
-              url: `https://localhost:3000/${frontMatter.image}`,
+              url: `https://valorant-kayakuko.com/${frontMatter.image}`,
               width: 1200,
               height: 700,
               alt: frontMatter.title,
