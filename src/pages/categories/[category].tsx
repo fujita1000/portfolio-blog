@@ -82,7 +82,7 @@ const Category = ({ posts, category, pages }: any) => {
       <NextSeo
         openGraph={{
           type: 'website',
-          url: `http:localhost:3000/categories/${category}`,
+          url: `https://valorant-kayakuko.com/categories/${category}`,
           title: category,
         }}
       />
