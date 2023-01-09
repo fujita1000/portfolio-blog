@@ -1,5 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
+import { NextSeo } from 'next-seo';
 import React from 'react';
 import PostCard from '@/components/postCard';
 
@@ -76,19 +77,29 @@ export const getStaticPaths = () => {
 
 const Category = ({ posts, category, pages }: any) => {
   return (
-    <div className='w-100 h-full bg-sub'>
-      <div className='m-auto w-[350px] md:w-11/12 pt-[40px] pb-20 xl:pt-[60px] '>
-        <h1 className='mb-[20px] xl:mb-[40px] text-3xl md:text-4xl xl:text-5xl'>{category}</h1>
-        <div
-          className='m-auto grid grid-cols-1 justify-between gap-[30px]  pb-3 md:grid-cols-2  md:gap-[40px] xl:grid-cols-3 xl:gap-[80px] 2xl:grid-cols-4    2xl:gap-[30px]'
-          id='height'
-        >
-          {posts.map((post: any) => (
-            <PostCard key={post.slug} post={post} />
-          ))}
+    <>
+      <NextSeo
+        openGraph={{
+          type: 'website',
+          url: `http:localhost:3000/categories/${category}`,
+          title: category,
+        }}
+      />
+      <></>
+      <div className='w-100 h-full bg-sub'>
+        <div className='m-auto w-[350px] pt-[40px] pb-20 md:w-11/12 xl:pt-[60px] '>
+          <h1 className='mb-[20px] text-3xl md:text-4xl xl:mb-[40px] xl:text-5xl'>{category}</h1>
+          <div
+            className='m-auto grid grid-cols-1 justify-between gap-[30px]  pb-3 md:grid-cols-2  md:gap-[40px] xl:grid-cols-3 xl:gap-[80px] 2xl:grid-cols-4    2xl:gap-[30px]'
+            id='height'
+          >
+            {posts.map((post: any) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
