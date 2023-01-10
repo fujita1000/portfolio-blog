@@ -9,8 +9,6 @@ import React from 'react';
 import SEO from "../../next-seo.config";
 import Layout from '@/components/Layout';
 
-
-
 function MyApp({ Component, pageProps}: AppProps) {
 const router = useRouter();
 
