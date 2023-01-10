@@ -33,7 +33,7 @@ class Document extends NextDocument<Props> {
         href="/favicons/safari-pinned-tab.svg"
         color="#5bbad5"
       />
-      <link rel="shortcut icon" href="/favicons/favicon.ico" />
+      <link rel="icon" href="/favicons/favicon.ico" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
       
