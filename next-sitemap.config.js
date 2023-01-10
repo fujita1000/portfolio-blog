@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: process_env_URL,
+  siteUrl: process.env.NEXT_PUBLIC_URL,
   generateRobotsTxt: true
 };
