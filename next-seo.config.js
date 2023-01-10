@@ -7,6 +7,15 @@ export default{
     locale: 'ja_JP',
     url: 'https://valorant-kayakuko.com',
     site_name: 'VALORANT火薬庫',
+    images: [
+					 {
+					 url: "https://valorant-kayakuko.com/dev/logo.png",
+					   width: 800,
+					   height: 600,
+					   alt: 'Og Image Alt',
+					   type: 'image/png',
+					 },
+					],
   },
   twitter: {
     handle: '@handle',
