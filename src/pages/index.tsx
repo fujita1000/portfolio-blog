@@ -50,7 +50,6 @@ const Home = ({ posts }: any) => {
 
   return (
     <div className='w-100 h-full bg-sub'>
-      <main>
         <Top_bg />
         <Drop_down
           agent={agent}
@@ -72,10 +71,7 @@ const Home = ({ posts }: any) => {
               <PostCard key={post.slug} post={post} />
             ))}
           </div>
-
-
         </div>
-      </main>
     </div>
   );
 };
