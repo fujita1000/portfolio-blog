@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://valorant-kayakuko.com
+
+# Sitemaps
+Sitemap: https://valorant-kayakuko.com/sitemap.xml
