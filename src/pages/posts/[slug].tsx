@@ -161,7 +161,12 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               {frontMatter.title}
             </h1>
             <div className='relative m-auto h-[211px] w-[350px] md:mb-[30px] md:h-[309px] md:w-full xl:h-[450px] xl:w-full'>
-              <Image src={`/${frontMatter.image}`} layout='fill' alt={frontMatter.title} />
+              <Image
+                src={`/${frontMatter.image}`}
+                layout='fill'
+                alt={frontMatter.title}
+                priority={true}
+              />
             </div>
             <p className='text-1xl mt-4'>{frontMatter.date}</p>
             <div className='  mt-[10px] flex  text-wtext '>
