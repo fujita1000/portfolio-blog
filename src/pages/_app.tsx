@@ -18,8 +18,7 @@ function MyApp({ Component, pageProps}: AppProps) {
 
  const router = useRouter();
   useEffect(() => {
-    const handleRouteChange = (url:string) => {
-      // @ts-ignore
+    const handleRouteChange = (url:any) => {
       gtag.pageview(url);
     };
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -32,8 +31,8 @@ function MyApp({ Component, pageProps}: AppProps) {
     <>
       <Script
         strategy='afterInteractive'
-        src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXX'
-      ></Script>
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_MEASUREMENT_ID}`}
+      />
 
       <Script
         id='google-analytics'
@@ -43,7 +42,7 @@ function MyApp({ Component, pageProps}: AppProps) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-SR7YWZ8036', {
+          gtag('config', '${gtag.GA_MEASUREMENT_ID}', {
           page_path: window.location.pathname,
           });
           `,
