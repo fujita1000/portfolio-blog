@@ -2,7 +2,6 @@ import { gsap } from 'gsap';
 import Image from "next/image";
 import Link from "next/link"
 import { useEffect } from "react";
-import {width ,height} from "../pages/api/AgentIcon"; 
 
 const Header = () => {
 
@@ -63,64 +62,64 @@ Nav!.addEventListener('click', () => {
         <h2 className='m-auto mt-[80px] w-11/12 text-[25px] text-wtext'>エージェントを選択</h2>
         <div className='rtl-grid m-auto  mt-[30px] grid w-11/12 grid-cols-4 gap-6 lg:grid-cols-5 2xl:grid-cols-4 '>
           <Link href={'/categories/アストラ'}>
-            <Image src={'/agent/astra.png'} alt='アストラ' width={width} height={height} />
+            <Image src={'/agent/astra.png'} alt='アストラ' width={100} height={100} />
           </Link>
           <Link href={'/categories/ヴァイパー'}>
-            <Image src={'/agent/viper.png'} alt='ヴァイパー' width={width} height={height} />
+            <Image src={'/agent/viper.png'} alt='ヴァイパー' width={100} height={100} />
           </Link>
           <Link href={'/categories/オーメン'}>
-            <Image src={'/agent/omen.png'} alt='オーメン' width={width} height={height} />
+            <Image src={'/agent/omen.png'} alt='オーメン' width={100} height={100} />
           </Link>
           <Link href={'/categories/キルジョイ'}>
-            <Image src={'/agent/killjoy.png'} alt='キルジョイ' width={width} height={height} />
+            <Image src={'/agent/killjoy.png'} alt='キルジョイ' width={100} height={100} />
           </Link>
           <Link href={'/categories/ケイオー'}>
-            <Image src={'/agent/kay_o.png'} alt='ケイオー' width={width} height={height} />
+            <Image src={'/agent/kay_o.png'} alt='ケイオー' width={100} height={100} />
           </Link>
           <Link href={'/categories/サイファー'}>
-            <Image src={'/agent/cypher.png'} alt='サイファー' width={width} height={height} />
+            <Image src={'/agent/cypher.png'} alt='サイファー' width={100} height={100} />
           </Link>
           <Link href={'/categories/ジェット'}>
-            <Image src={'/agent/jett.png'} alt='ジェット' width={width} height={height} />
+            <Image src={'/agent/jett.png'} alt='ジェット' width={100} height={100} />
           </Link>
           <Link href={'/categories/スカイ'}>
-            <Image src={'/agent/sky.png'} alt='スカイ' width={width} height={height} />
+            <Image src={'/agent/sky.png'} alt='スカイ' width={100} height={100} />
           </Link>
           <Link href={'/categories/セージ'}>
-            <Image src={'/agent/sage.png'} alt='セージ' width={width} height={height} />
+            <Image src={'/agent/sage.png'} alt='セージ' width={100} height={100} />
           </Link>
           <Link href={'/categories/ソーヴァ'}>
-            <Image src={'/agent/sova.png'} alt='ソーヴァ' width={width} height={height} />
+            <Image src={'/agent/sova.png'} alt='ソーヴァ' width={100} height={100} />
           </Link>
           <Link href={'/categories/チェンバー'}>
-            <Image src={'/agent/chember.png'} alt='チェンバー' width={width} height={height} />
+            <Image src={'/agent/chember.png'} alt='チェンバー' width={100} height={100} />
           </Link>
           <Link href={'/categories/ネオン'}>
-            <Image src={'/agent/neon.png'} alt='ネオン' width={width} height={height} />
+            <Image src={'/agent/neon.png'} alt='ネオン' width={100} height={100} />
           </Link>
           <Link href={'/categories/ハーバー'}>
-            <Image src={'/agent/harbor.png'} alt='ハーバー' width={width} height={height} />
+            <Image src={'/agent/harbor.png'} alt='ハーバー' width={100} height={100} />
           </Link>
           <Link href={'/categories/フェイド'}>
-            <Image src={'/agent/fade.png'} alt='フェイド' width={width} height={height} />
+            <Image src={'/agent/fade.png'} alt='フェイド' width={100} height={100} />
           </Link>
           <Link href={'/categories/フェニックス'}>
-            <Image src={'/agent/phoenix.png'} alt='フェニックス' width={width} height={height} />
+            <Image src={'/agent/phoenix.png'} alt='フェニックス' width={100} height={100} />
           </Link>
           <Link href={'/categories/ブリーチ'}>
-            <Image src={'/agent/bleach.png'} alt='ブリーチ' width={width} height={height} />
+            <Image src={'/agent/bleach.png'} alt='ブリーチ' width={100} height={100} />
           </Link>
           <Link href={'/categories/ブリム'}>
-            <Image src={'/agent/brim.png'} alt='ブリム' width={width} height={height} />
+            <Image src={'/agent/brim.png'} alt='ブリム' width={100} height={100} />
           </Link>
           <Link href={'/categories/ヨル'}>
-            <Image src={'/agent/yoru.png'} alt='ヨル' width={width} height={height} />
+            <Image src={'/agent/yoru.png'} alt='ヨル' width={100} height={100} />
           </Link>
           <Link href={'/categories/レイズ'}>
-            <Image src={'/agent/raze.png'} alt='レイズ' width={width} height={height} />
+            <Image src={'/agent/raze.png'} alt='レイズ' width={100} height={100} />
           </Link>
           <Link href={'/categories/レイナ'}>
-            <Image src={'/agent/rayna.png'} alt='レイナ' width={width} height={height} />
+            <Image src={'/agent/rayna.png'} alt='レイナ' width={100} height={100} />
           </Link>
         </div>
       </div>

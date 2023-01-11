@@ -17,10 +17,6 @@ import { unified } from 'unified';
 import Profile from "../../components/Profile";
 import SintyakuCard from "../../components/SintyakuCard";
 import { params } from '../../utils/types';
-import { SINTYAKU_LIMIT } from '../api/SintyakuLimit';
-
-
-
 
 const getToc = (options: any) => {
   return (node: any) => {
@@ -46,8 +42,8 @@ export async function getStaticProps({ params }: params) {
   );
 
     const slicedPosts = sortedPosts.slice(
-      SINTYAKU_LIMIT * (1 - 1),
-      SINTYAKU_LIMIT * 1,
+      3 * (1 - 1),
+      3 * 1,
     );
 
   const file = fs.readFileSync(`posts/${params.slug}.md`, 'utf-8');
