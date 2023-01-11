@@ -93,5 +93,5 @@ CTの道の途中にある縦の木材に立ちます。
 そこにエイムを合わせて発射すると。
 ![Bサイト隅空爆4](https://valorant-kayakuko.com/posts/brim/ascent-brim-lineup/bct-bhazi-4.jpg)
 Bサイトの隅に着弾します。
-<!-- [Link](/) -->
+
 

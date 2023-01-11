@@ -1,7 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import { gsap } from 'gsap';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Drop_down from '../components/Drop_down';
 import Top_bg from '../components/Top_bg';
 import PostCard from '../components/postCard';
