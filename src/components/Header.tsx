@@ -31,7 +31,13 @@ Nav!.addEventListener('click', () => {
         <div className='m-auto flex h-[60px] w-11/12 items-center justify-between text-wtext md:h-[70px] xl:h-[75px]'>
           <Link href='/'>
             <div className='relative h-[50px] w-[50px] md:h-[60px] md:w-[60px] xl:h-[75px] xl:w-[75px]'>
-              <Image src={'/dev/logo.png'} alt='ロゴ' layout='fill' objectFit='contain'></Image>
+              <Image
+                src={'/dev/logo.png'}
+                alt='ロゴ'
+                layout='fill'
+                objectFit='contain'
+                priority={true}
+              ></Image>
             </div>
           </Link>
           <Link href='/'>
