@@ -36,12 +36,13 @@ const Home = ({ posts }: any) => {
 
   // Function for multiple search filter
   const multipleSearch = (array: any) => {
-    return array.filter((post: any) =>
-      Object.keys(post.frontMatter.categories).some(
-        (parameter) =>
-          post.frontMatter.categories[parameter].toString().toLowerCase().includes(agent) &&
+    return array.filter(
+      (post: any) =>
+       Object.keys(post.frontMatter.categories).some((parameter) =>
+        post.frontMatter.categories[parameter].toString().toLowerCase().includes(agent) &&
+        Object.keys(post.frontMatter.categories).some((parameter) =>
           post.frontMatter.categories[parameter].toString().toLowerCase().includes(map),
-      ),
+       )),
     );
   };
 
