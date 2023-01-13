@@ -98,7 +98,7 @@ Cロビーにある箱のくぼみに立ちます。
 そこにエイムを合わせます。   
 発射すると
 ![安全設置空爆1-4](https://valorant-kayakuko.com/posts/brim/haven-brim-lineup/clobby-anzen-4.png)  
-安全設置に着弾します。
+デフォルト設置に着弾します。
 
 ### 安全設置空爆
 ![安全設置空爆-1](https://valorant-kayakuko.com/posts/brim/haven-brim-lineup/clong-anzen2-1.png)  
