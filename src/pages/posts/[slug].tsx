@@ -195,7 +195,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
                 <SintyakuCard key={post.slug} post={post} />
               ))}
             </div>
-            <div className='prose sticky top-[40px]  border-[5px] border-main  m-auto mt-[40px] overflow-x-hidden hidden w-[325px] xl:block overflow-scroll h-[550px] 2xl:h-[700px]'>
+            <div className='prose sticky top-[40px] shadow-2xl m-auto mt-[40px] overflow-x-hidden hidden w-[325px] xl:block overflow-scroll h-[550px] 2xl:h-[700px]'>
               <div className='p-t[20px]'>
                 <p className='text-center text-3xl '>目次</p>
                 <div dangerouslySetInnerHTML={{ __html: toc }}></div>
