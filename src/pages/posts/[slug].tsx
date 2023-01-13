@@ -178,7 +178,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               ))}
             </div>
             <div>
-              <div className=' mt-10 w-[350px] prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px] prose-li:ml-[30px]  prose-li:list-disc  prose-li:text-[20px] prose-li:underline md:w-full [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] 2xl:[&>p]:text-[20px]'>
+              <div className=' mt-10 w-[350px] prose-h4:mt-10 prose-h4:text-[25px] prose-p:pt-[10px] prose-li:ml-[30px]  prose-li:list-disc  prose-li:text-[20px]  md:w-full [&>h2]:mt-10  [&>h2]:text-[25px] 2xl:[&>h2]:text-[30px] 2xl:[&>h4]:text-[30px] [&>h3]:mt-10 [&>h3]:text-[25px]  2xl:[&>h3]:text-[30px]  [&>img]:my-10 [&>ul]:ml-[30px] [&>p]:my-[10px] [&>p]:text-[16px] prose-a:text-main 2xl:[&>p]:text-[20px]'>
                 {toReactNode(content)}
               </div>
             </div>
@@ -195,7 +195,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
                 <SintyakuCard key={post.slug} post={post} />
               ))}
             </div>
-            <div className='prose sticky top-[40px] shadow-2xl m-auto mt-[40px] overflow-x-hidden hidden w-[325px] xl:block overflow-scroll h-[550px] 2xl:h-[700px]'>
+            <div className='prose sticky top-[40px] prose-a:no-underline prose-a:text-btext shadow-2xl m-auto mt-[40px] overflow-x-hidden hidden w-[325px] xl:block overflow-scroll h-[550px] 2xl:h-[700px]'>
               <div className='p-t[20px]'>
                 <p className='text-center text-3xl '>目次</p>
                 <div dangerouslySetInnerHTML={{ __html: toc }}></div>
