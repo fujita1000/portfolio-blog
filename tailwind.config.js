@@ -1,4 +1,7 @@
-module.exports = {
+module.exports = {   
+ content: [
+      './src/**/*.{js,ts,jsx,tsx}',
+    ],
   plugins: [
     require('@tailwindcss/typography'),
   ],
@@ -11,16 +14,6 @@ theme: {
       '2xl': '1536px',
     },
   },
-  purge: {
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      './src/**/*.{js,ts,jsx,tsx}',
-    ],
-    mode: 'jit',
-    options: {
-      safelist: [],
-    },
-   },
   theme: {
     extend: {
         colors: {
