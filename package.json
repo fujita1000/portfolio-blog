@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "analyze": "cross-env BUNDLE_ANALYZE=both next build",
+    "analyze": "cross-env ANALYZE=true next build",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint --dir src",
@@ -41,11 +41,13 @@
     "printWidth": 100
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^13.1.2",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
