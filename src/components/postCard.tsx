@@ -15,10 +15,10 @@ const PostCard = ({ post }: post) => {
           />
           <div className='absolute top-[10px]  left-[10px] mb-[40px] flex text-wtext'>
             {post.frontMatter.categories.map((category: any) => (
-              <div key={category}>
+              <div key={category} className='border-[2px] border-solid border-yellow-300 mr-[20px]'>
                 <Link href={`/categories/${category}`}>
                   <a className='text-wtext'>
-                    <p className='mr-[20px] flex h-[30px] items-center justify-center bg-main pr-[30px] pl-[30px]'>
+                    <p className='flex h-[30px] items-center justify-center bg-main pr-[20px] pl-[20px]'>
                       {category}
                     </p>
                   </a>

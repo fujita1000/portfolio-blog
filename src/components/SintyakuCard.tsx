@@ -6,16 +6,18 @@ import { post } from '../utils/types';
 const SintyakuCard = ({ post }: post) => {
   return (
     <Link href={`/posts/${post.slug}`}>
-      <a>
         <div className='mt-[10px] pb-8'>
           <div className='relative h-[200px] w-[350px] md:h-[281px] md:w-full xl:h-[225px] xl:w-full'>
             <Image src={`/${post.frontMatter.image}`} layout='fill' alt={post.frontMatter.title} />
             <div className='absolute top-[10px]  left-[10px] mb-[40px] flex text-wtext'>
               {post.frontMatter.categories.map((category: any) => (
-                <div key={category}>
+                <div
+                  key={category}
+                  className='border-[2px] border-solid border-yellow-300 mr-[20px]'
+                >
                   <Link href={`/categories/${category}`}>
                     <a className='text-wtext'>
-                      <p className='mr-[20px] flex h-[30px] items-center justify-center bg-main pr-[30px] pl-[30px]'>
+                      <p className='flex h-[30px] items-center justify-center bg-main pr-[15px] pl-[15px]'>
                         {category}
                       </p>
                     </a>
@@ -29,7 +31,6 @@ const SintyakuCard = ({ post }: post) => {
             <p>{post.frontMatter.date}</p>
           </div>
         </div>
-      </a>
     </Link>
   );
 };
