@@ -15,7 +15,7 @@ const SintyakuCard = ({ post }: post) => {
             objectFit='contain'
             alt={post.frontMatter.title}
           />
-          <div className='absolute top-[10px]  left-[10px] mb-[40px] flex text-wtext'>
+          <div className='absolute top-[10px]  left-[10px] mb-[40px] flex text-wtext mt-[20px]'>
             {post.frontMatter.categories.map((category: any) => (
               <div key={category} className='border-[2px] border-solid border-yellow-300 mr-[20px]'>
                 <Link href={`/categories/${category}`}>

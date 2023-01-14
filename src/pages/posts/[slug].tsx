@@ -156,7 +156,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
             <h1 className='mb-[30px] pt-[20px] text-2xl xl:mb-[50px] xl:text-3xl'>
               {frontMatter.title}
             </h1>
-            <div className='relative m-auto h-[211px] w-[350px] md:mb-[30px] md:h-[309px] md:w-full xl:h-[450px] xl:w-full'>
+            <div className='relative m-auto xl:-mt-[28px] h-[211px] w-[350px] md:mb-[30px] md:h-[309px] md:w-full xl:h-[450px] xl:w-full'>
               <Image
                 src={`/${frontMatter.image}`}
                 layout='fill'
@@ -166,16 +166,21 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
               />
             </div>
             <p className='text-1xl mt-4'>{frontMatter.date}</p>
+            <p className="mt-[20px]">カテゴリー</p>
             <div className='  mt-[10px] flex  text-wtext '>
               {frontMatter.categories.map((category: any) => (
-                <p
+                <div
                   key={category}
-                  className='mr-[20px] flex h-[30px] items-center justify-center rounded-2xl bg-main pr-[30px] pl-[30px]'
+                  className='border-[2px] border-solid border-yellow-300 mr-[20px]'
                 >
                   <Link href={`/categories/${category}`}>
-                    <a className='text-wtext'>{category}</a>
+                    <a className='text-wtext'>
+                      <p className='flex h-[30px] items-center justify-center bg-main pr-[20px] pl-[20px]'>
+                        {category}
+                      </p>
+                    </a>
                   </Link>
-                </p>
+                </div>
               ))}
             </div>
             <div>
