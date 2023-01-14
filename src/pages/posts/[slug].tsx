@@ -112,7 +112,7 @@ const toReactNode = (content :params) => {
 };
 
 const MyImage = ({ src, alt }: any) => {
-  return <Image src={src} alt={alt} width={840} height={473} />;
+  return <Image src={src} alt={alt} width={840} height={473} loading="eager" />;
 };
 
 function MyLink({ children, href }: any) {

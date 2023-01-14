@@ -11,7 +11,7 @@ categories: ['ブリム', 'アセント']
 アセントでできるブリムストーンの空爆を８つ紹介します。あらゆる場所を想定していますのでぜひご覧ください。そして覚えた空爆をコンペで披露し、野良VCからの賞賛の声をお聞きください。
 ## Aサイト
 ### 緑コン空爆
-![緑コン空爆画像1](https://valorant-kayakuko.com/posts/brim/ascent-brim-lineup/alobby-midokon-1.jpg)  
+![緑コン空爆画像1](https://valorant-kayakuko.com/posts/brim/ascent-brim-lineup/alobby-midokon-1.jpg)
 まずAロビーの箱の角に立ちます。
 ![緑コン空爆画像2](https://valorant-kayakuko.com/posts/brim/ascent-brim-lineup/alobby-midokon-2.jpg)
 矢印の先の建物の角にエイムを合わせます。
