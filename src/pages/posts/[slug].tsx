@@ -162,6 +162,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
                 layout='fill'
                 alt={frontMatter.title}
                 priority={true}
+                objectFit='contain'
               />
             </div>
             <p className='text-1xl mt-4'>{frontMatter.date}</p>
