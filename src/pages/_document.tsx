@@ -38,7 +38,6 @@ class Document extends NextDocument<Props> {
       <meta name="theme-color" content="#ffffff" />
       
       <meta charSet="utf-8" />
-      <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, width=device-width, initial-scale=1" />
       <meta name="keywords" content="Valorant火薬庫 valorant 空爆" />
       <meta name="google" content="nositelinkssearchbox" />
     
