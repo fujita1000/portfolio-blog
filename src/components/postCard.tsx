@@ -11,7 +11,7 @@ const PostCard = ({ post }: post) => {
             src={`/${post.frontMatter.image}`}
             alt={post.frontMatter.title}
             layout='fill'
-            priority={true}
+            loading="eager"
             objectFit='contain'
           />
           <div className='absolute top-[10px]  left-[10px] mb-[40px] flex text-wtext'>
