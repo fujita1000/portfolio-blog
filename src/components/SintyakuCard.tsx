@@ -11,7 +11,6 @@ const SintyakuCard = ({ post }: post) => {
           <Image
             src={`/${post.frontMatter.image}`}
             layout='fill'
-            loading="eager"
             objectFit='contain'
             alt={post.frontMatter.title}
           />
