@@ -5,13 +5,12 @@ const Privacy = () => {
   return (
     <>
       <Head>
-        <title>プライバシーポリシー【VALORANT火薬庫】</title>
+        <title>ポートフォリオ用ブログ</title>
         <meta
           name='description'
-          content='VALORANT火薬庫のプライバシーポリシーページです。当サイトはValorantプレイヤーがより強くなり、eSportsがより日本で発展することを願って作られています。このサイトでどうにかなるとは思いませんが、少しでも力になりたいです。'
+          content='ポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログポートフォリオ用ブログ'
         />
-        <meta name='keywords' content='VALORANT火薬庫 VALORANT 空爆 プライバシーポリシー' />
-
+        <meta name='keywords' content='ポートフォリオ用ブログ' />
       </Head>
       <div className='w-full bg-sub'>
         <div className='m-auto w-11/12 pb-20 pt-10 [&>h3]:text-[20px] md:[&>h3]:text-[25px] xl:[&>h3]:text-[30px] [&>p]:text-[16px] md:[&>p]:text-[20px] xl:[&>p]:text-[25px] 2xl:[&>h3]:text-[35px] 2xl:[&>p]:text-[25px]'>
@@ -21,7 +20,7 @@ const Privacy = () => {
           <br />
           <h3>個人情報の利用目的</h3>
           <p>
-            VALORANT火薬庫(以降:当サイトと呼ぶ)では個人情報の収集は一切行っておりません。お問い合わせメールなどの個人情報は、本人の同意なく公開、第三者への提供は一切行いません。
+            ポートフォリオ用ブログ(以降:当サイトと呼ぶ)では個人情報の収集は一切行っておりません。お問い合わせメールなどの個人情報は、本人の同意なく公開、第三者への提供は一切行いません。
           </p>
           <p>
             アクセス解析ツールやアフェリエイトプログラム、広告配信サービスを利用しているため、Cookieを使って情報を取得する場合がございます。
@@ -80,14 +79,11 @@ const Privacy = () => {
           <p>当サイトは基本的にリンクフリーです。リンクを行う場合の許可や連絡は不要です。</p>
           <p>ただし、インラインフレームの使用や画像の直リンクはご遠慮ください。</p>
           <br />
-          <h3>最後に</h3>
-          <p>
-            当サイトはValorantプレイヤーがより強くなり、eSportsがより日本で発展することを願って作られています。このサイトでどうにかなるとは思いませんが、少しでも力になりたいです。それではランクであったらVCでもしてください。あと個人で当サイトを作ってるのでUIや機能などはお遊び感覚でガンガン変更します。それでは、ばいばい。
-          </p>
+
           <br />
           <h3>運営者について</h3>
-          <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/OomiyaGG'>
-            <p>twitter:@OomiyaGG</p>
+          <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/demodemodemo'>
+            <p>twitter:@DEMO</p>
           </a>
         </div>
       </div>
