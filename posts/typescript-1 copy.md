@@ -2,7 +2,7 @@
 title: '【TypeScriptの基礎】TypeScriptの基礎を紹介します。'
 date: '2023-01-14'
 description: '【TypeScriptの基礎】TypeScriptの基礎を紹介します。【TypeScriptの基礎】TypeScriptの基礎を紹介します。【TypeScriptの基礎】TypeScriptの基礎を紹介します。'
-image: portfolio/typescript.png
+image: portfolio/TypeScript.png
 categories: ['TypeScript']
 ---
 ## 目次
