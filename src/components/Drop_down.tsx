@@ -37,26 +37,13 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
                   onChange={(e) => onChangeAgent(e)}
                 >
                   <option value=''> ALL </option>
-                  <option value='アストラ'>アストラ</option>
-                  <option value='ヴァイパー'>ヴァイパー</option>
-                  <option value='オーメン'>オーメン</option>
-                  <option value='キルジョイ'>キルジョイ</option>
-                  <option value='KAY/O'>KAY/O</option>
-                  <option value='サイファー'>サイファー</option>
-                  <option value='ジェット'>ジェット</option>
-                  <option value='スカイ'>スカイ</option>
-                  <option value='セージ'>セージ</option>
-                  <option value='ソーヴァ'>ソーヴァ</option>
-                  <option value='チェンバー'>チェンバー</option>
-                  <option value='ネオン'>ネオン</option>
-                  <option value='ハーバー'>ハーバー</option>
-                  <option value='フェイド'>フェイド</option>
-                  <option value='フェニックス'>フェニックス</option>
-                  <option value='ブリーチ'>ブリーチ</option>
-                  <option value='ブリム'>ブリム</option>
-                  <option value='ヨル'>ヨル</option>
-                  <option value='レイズ'>レイズ</option>
-                  <option value='レイナ'>レイナ</option>
+                  <option value='html'>HTML</option>
+                  <option value='css'>CSS</option>
+                  <option value='javascript'>JavaScript</option>
+                  <option value='typescript'>TypeScript</option>
+                  <option value='jquery'>jQuery</option>
+                  <option value='gsap'>GSAP</option>
+                  <option value='npm'>NPM</option>
                 </select>
               </div>
             </form>
@@ -85,15 +72,14 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
                   id='map'
                   onChange={(e) => onChangeMap(e)}
                 >
-                  <option value=''>ALL</option>
-                  <option value='アイスボックス'>アイスボックス</option>
-                  <option value='アセント'>アセント</option>
-                  <option value='スプリット'>スプリット</option>
-                  <option value='バインド'>バインド</option>
-                  <option value='パール'>パール</option>
-                  <option value='フラクチャー'>フラクチャー</option>
-                  <option value='ブリーズ'>ブリーズ</option>
-                  <option value='ヘイブン'>ヘイブン</option>
+                  <option value=''> ALL </option>
+                  <option value='html'>HTML</option>
+                  <option value='css'>CSS</option>
+                  <option value='javascript'>JavaScript</option>
+                  <option value='typescript'>TypeScript</option>
+                  <option value='jquery'>jQuery</option>
+                  <option value='gsap'>GSAP</option>
+                  <option value='npm'>NPM</option>
                 </select>
               </div>
             </form>

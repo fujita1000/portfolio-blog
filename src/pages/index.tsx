@@ -30,7 +30,7 @@ export const getStaticProps = () => {
 };
 
 const Home = ({ posts }: any) => {
-  
+  console.log(posts)
   const [agent, setAgent] = useState('');
   const [map, setMap] = useState('');
 
@@ -49,7 +49,8 @@ const Home = ({ posts }: any) => {
   const filtered = multipleSearch(posts);
 
   return (
-    <div className='w-100 h-full bg-sub'>
+    <div className='w-100 h-full bg-sub'>   
+       <div className=''>{agent}</div>
       <Top_bg />
       <Drop_down
         agent={agent}
