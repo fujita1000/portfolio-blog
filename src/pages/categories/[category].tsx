@@ -39,34 +39,13 @@ export const getStaticProps = ({ params }:any) => {
 
 export const getStaticPaths = () => {
   const categories = [
-    'アストラ',
-    'ヴァイパー',
-    'オーメン',
-    'キルジョイ',
-    'ケイオー',
-    'サイファー',
-    'ジェット',
-    'スカイ',
-    'セージ',
-    'ソーヴァ',
-    'チェンバー',
-    'ネオン',
-    'ハーバー',
-    'フェイド',
-    'フェニックス',
-    'ブリム',
-    'ブリーチ',
-    'ヨル',
-    'レイズ',
-    'レイナ',
-    'アイスボックス',
-    'アセント',
-    'スプリット',
-    'バインド',
-    'パール',
-    'フラクチャー',
-    'ブリーズ',
-    'ヘイブン',
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+    'jQuery',
+    'GSAP',
+    'NPM'
   ];
   const paths = categories.map((category) => ({ params: { category } }));
 
@@ -82,7 +61,7 @@ const Category = ({ posts, category, pages }: any) => {
       <NextSeo
         openGraph={{
           type: 'website',
-          url: `https://valorant-kayakuko.com/categories/${category}`,
+          url: `http://localhost:3000/categories/${category}`,
           title: category,
         }}
       />

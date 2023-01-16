@@ -36,12 +36,14 @@ Nav!.addEventListener('click', () => {
                 alt='ロゴ'
                 layout='fill'
                 objectFit='contain'
-                loading="eager"
+                loading='eager'
               ></Image>
             </div>
           </Link>
           <Link href='/'>
-            <h1 className='text-2xl text-wtext md:text-[35px] xl:text-[45px]'>VALORANT火薬庫</h1>
+            <h1 className='text-2xl text-wtext md:text-[35px] xl:text-[45px]'>
+              ポートフォリオ用ブログ
+            </h1>
           </Link>
 
           <div className='p-1/2' id='play'>
@@ -67,65 +69,36 @@ Nav!.addEventListener('click', () => {
         </div>
         <h2 className='m-auto mt-[80px] w-11/12 text-[25px] text-wtext'>エージェントを選択</h2>
         <div className='rtl-grid m-auto  mt-[30px] grid w-11/12 grid-cols-4 gap-6 lg:grid-cols-5 2xl:grid-cols-4 '>
-          <Link href={'/categories/アストラ'}>
-            <Image src={'/agent/astra.png'} alt='アストラ' width={100} height={100} />
+          <Link href={'/categories/HTML'}>
+            <Image src={'/portfolio/header/html.png'} alt='html' width={100} height={100} />
           </Link>
-          <Link href={'/categories/ヴァイパー'}>
-            <Image src={'/agent/viper.png'} alt='ヴァイパー' width={100} height={100} />
+          <Link href={'/categories/CSS'}>
+            <Image src={'/portfolio/header/css.png'} alt='css' width={100} height={100} />
           </Link>
-          <Link href={'/categories/オーメン'}>
-            <Image src={'/agent/omen.png'} alt='オーメン' width={100} height={100} />
+          <Link href={'/categories/JavaScript'}>
+            <Image
+              src={'/portfolio/header/javascript.png'}
+              alt='javascript'
+              width={100}
+              height={100}
+            />
           </Link>
-          <Link href={'/categories/キルジョイ'}>
-            <Image src={'/agent/killjoy.png'} alt='キルジョイ' width={100} height={100} />
+          <Link href={'/categories/TypeScript'}>
+            <Image
+              src={'/portfolio/header/typescript.png'}
+              alt='typescript'
+              width={100}
+              height={100}
+            />
           </Link>
-          <Link href={'/categories/ケイオー'}>
-            <Image src={'/agent/kay_o.png'} alt='ケイオー' width={100} height={100} />
+          <Link href={'/categories/jQuery'}>
+            <Image src={'/portfolio/header/jquery.png'} alt='jquery' width={100} height={100} />
           </Link>
-          <Link href={'/categories/サイファー'}>
-            <Image src={'/agent/cypher.png'} alt='サイファー' width={100} height={100} />
+          <Link href={'/categories/GSAP'}>
+            <Image src={'/portfolio/header/gsap.png'} alt='gsap' width={100} height={100} />
           </Link>
-          <Link href={'/categories/ジェット'}>
-            <Image src={'/agent/jett.png'} alt='ジェット' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/スカイ'}>
-            <Image src={'/agent/sky.png'} alt='スカイ' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/セージ'}>
-            <Image src={'/agent/sage.png'} alt='セージ' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/ソーヴァ'}>
-            <Image src={'/agent/sova.png'} alt='ソーヴァ' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/チェンバー'}>
-            <Image src={'/agent/chember.png'} alt='チェンバー' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/ネオン'}>
-            <Image src={'/agent/neon.png'} alt='ネオン' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/ハーバー'}>
-            <Image src={'/agent/harbor.png'} alt='ハーバー' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/フェイド'}>
-            <Image src={'/agent/fade.png'} alt='フェイド' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/フェニックス'}>
-            <Image src={'/agent/phoenix.png'} alt='フェニックス' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/ブリーチ'}>
-            <Image src={'/agent/bleach.png'} alt='ブリーチ' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/ブリム'}>
-            <Image src={'/agent/brim.png'} alt='ブリム' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/ヨル'}>
-            <Image src={'/agent/yoru.png'} alt='ヨル' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/レイズ'}>
-            <Image src={'/agent/raze.png'} alt='レイズ' width={100} height={100} />
-          </Link>
-          <Link href={'/categories/レイナ'}>
-            <Image src={'/agent/rayna.png'} alt='レイナ' width={100} height={100} />
+          <Link href={'/categories/NPM'}>
+            <Image src={'/portfolio/header/npm.png'} alt='npm' width={100} height={100} />
           </Link>
         </div>
       </div>

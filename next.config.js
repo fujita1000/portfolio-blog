@@ -6,7 +6,7 @@ module.exports = withBundleAnalyzer({
    reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['valorant-kayakuko.com'],
+    domains: ['localhost:3000'],
   },
 })
 

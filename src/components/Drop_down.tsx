@@ -15,8 +15,8 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
       <div className='relative -my-14 flex justify-center md:-my-[80px] 2xl:-my-[100px]'>
         <div className='mb-10 flex w-11/12 justify-between'>
           <label className='mt-[3px] w-5/12'>
-            <h2 className='text-1xl text-center text-wtext md:text-[30px] 2xl:text-[40px] '>
-              エージェント選択
+            <h2 className='text-1xl text-center text-btext md:text-[30px] 2xl:text-[40px] '>
+              カテゴリー１選択
             </h2>
             <form className='relative -mt-[10px] h-11 w-full'>
               <div className='absolute inset-y-2/4 left-[10px] md:left-[15px]'>
@@ -63,8 +63,8 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
           </label>
 
           <label className='mt-[3px] w-5/12'>
-            <h2 className='text-1xl text-center text-wtext md:text-[30px] 2xl:text-[40px] '>
-              マップ選択
+            <h2 className='text-1xl text-center text-btext md:text-[30px] 2xl:text-[40px] '>
+              カテゴリー２選択
             </h2>
             <form className='relative -mt-[10px] h-11 w-full'>
               <div className='absolute inset-y-2/4 left-[10px] md:left-[15px]'>

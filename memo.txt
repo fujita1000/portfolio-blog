@@ -1,0 +1,23 @@
+---
+title: '【VALORANT空爆】アイスボックスのヴァイパーの空爆１０選'
+date: '2023-01-14'
+description: 'アイスボックスの空爆を１０個紹介します。できるだけわかり易い空爆になるように研究したのでぜひご覧ください。'
+image: posts/viper/icebox-viper-lineup/bouhiden-4.png
+categories: ['ヴァイパー', 'アイスボックス']
+---
+## 目次
+
+## TOP
+アイスボックスの空爆を１０個紹介します。利便性を考えて極端に遠距離からの空爆は避けています。できるだけわかり易い空爆になるように研究したのでぜひご覧ください。
+
+## Aサイト
+### デフォルト設置空爆
+![Aサイトデフォルト設置空爆1](/posts/viper/icebox-viper-lineup/amain-default-1.png)
+まずロープ前にあるタイルの隙間と色付き線の交差点に立ちます。
+![Aサイトデフォルト設置空爆2](/posts/viper/icebox-viper-lineup/amain-default-2.png)
+そこから矢印の場所に注目します。
+![Aサイトデフォルト設置空爆3](/posts/viper/icebox-viper-lineup/amain-default-3.png)
+そこに「しゃがみ状態」でガスのバーの右角を合わせます。  
+発射すると。
+![Aサイトデフォルト設置空爆4](/posts/viper/icebox-viper-lineup/amain-default-4.png)
+デフォルト設置に着弾します。
