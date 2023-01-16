@@ -156,7 +156,7 @@ const Post = ({ frontMatter, content, slug, toc , posts}: params) => {
             <h1 className='mb-[30px] pt-[20px] text-2xl xl:mb-[50px] xl:text-3xl'>
               {frontMatter.title}
             </h1>
-            <div className='relative m-auto xl:-mt-[28px] h-[211px] w-[350px] md:mb-[30px] md:h-[309px] md:w-full xl:h-[450px] xl:w-full'>
+            <div className='relative m-auto h-[211px] w-[350px] md:mb-[30px] md:h-[309px] md:w-full xl:h-[450px] xl:w-full'>
               <Image
                 src={`/${frontMatter.image}`}
                 layout='fill'

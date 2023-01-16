@@ -4,12 +4,13 @@ import React from 'react';
 const Profile = () => {
   return (
     <>
-      <div className='h-[478px] w-full bg-main'>
+      <div className='h-[478px] w-full bg-main -mt-[5px]'>
         <div className='relative top-[15px] m-auto h-[150px] w-[150px] rounded-2xl'>
           <Image
             src={'/dev/demo.jpg'}
             alt='demoのロゴ'
             layout='fill'
+            priority={true}
             objectFit='contain'
             className='rounded-[50%]'
           />
