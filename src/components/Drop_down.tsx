@@ -2,12 +2,12 @@ import Image from "next/image";
 import { useEffect } from 'react';
 
 interface DropDownFrom {
-  agent:any,
-  map:any,
-  onChangeAgent: (event: any) => void;
-  onChangeMap: (event: any) => void;
+  category1:any,
+  category2:any,
+  onChangeCategory1: (event: any) => void;
+  onChangeCategory2: (event: any) => void;
 }
-const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
+const Drop_down = ({ onChangeCategory1, onChangeCategory2 }: DropDownFrom) => {
   useEffect(() => {});
 
   return (
@@ -34,7 +34,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
                   className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main  indent-[15px] text-wtext  md:h-[50px] md:indent-[70px] md:text-[25px] xl:indent-[100px] 2xl:h-[60px] 2xl:text-[35px] '
                   name='agent'
                   id='agent'
-                  onChange={(e) => onChangeAgent(e)}
+                  onChange={(e) => onChangeCategory1(e)}
                 >
                   <option value=''> ALL </option>
                   <option value='html'>HTML</option>
@@ -70,7 +70,7 @@ const Drop_down = ({ onChangeAgent, onChangeMap }: DropDownFrom) => {
                   className='text-1xl my-4 h-[40px] w-full border-[3px] border-solid border-yellow-300 bg-main  indent-[15px] text-wtext md:h-[50px] md:indent-[70px] md:text-[25px] xl:indent-[100px] 2xl:h-[60px] 2xl:text-[35px] '
                   name='map'
                   id='map'
-                  onChange={(e) => onChangeMap(e)}
+                  onChange={(e) => onChangeCategory2(e)}
                 >
                   <option value=''> ALL </option>
                   <option value='html'>HTML</option>
