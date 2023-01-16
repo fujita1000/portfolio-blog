@@ -67,7 +67,7 @@ Nav!.addEventListener('click', () => {
           <div className='absolute right-[20px] top-[45px] h-[5px] w-[45px] rotate-45 bg-wtext'></div>
           <div className='absolute right-[20px] top-[45px] h-[5px] w-[45px] -rotate-45 bg-wtext'></div>
         </div>
-        <h2 className='m-auto mt-[80px] w-11/12 text-[25px] text-wtext'>エージェントを選択</h2>
+        <h2 className='m-auto mt-[80px] w-11/12 text-[25px] text-wtext'>カテゴリー選択</h2>
         <div className='rtl-grid m-auto  mt-[30px] grid w-11/12 grid-cols-4 gap-6 lg:grid-cols-5 2xl:grid-cols-4 '>
           <Link href={'/categories/HTML'}>
             <Image src={'/portfolio/header/html.png'} alt='html' width={100} height={100} />
