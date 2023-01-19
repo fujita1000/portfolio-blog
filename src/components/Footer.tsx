@@ -35,7 +35,7 @@ const Footer = () => {
         </a>
       </div>
       <p className='text-[14px] 2xl:pb-10 py-4 text-center md:text-[20px] 2xl:text-[30px]'>
-        Copyright - <Link href='/'>Oomiya</Link>, 2023 All Rights Reserved.
+        Copyright - <Link href='/'>Fujita</Link>, 2023 All Rights Reserved.
       </p>
     </footer>
   );
