@@ -82,7 +82,7 @@ const Privacy = () => {
 
           <br />
           <h3>運営者について</h3>
-          <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/demodemodemo'>
+          <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/demodemodemo99545459'>
             <p>twitter:@DEMO</p>
           </a>
         </div>
